@@ -10865,7 +10865,7 @@ focus_tree = {
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus RAJ_harsh_on_pakistan"
 			add_command_power = 10
-			custom_effect_tooltip = kasmir_increase_readiness_TT
+			custom_effect_tooltip = border_war_increase_readiness_TT
 			add_opinion_modifier = {
 				modifier = drama
 				target = PAK
@@ -10875,11 +10875,8 @@ focus_tree = {
 				target = PAK
 			}
 			hidden_effect = {
-				random_list = {
-					10 = { add_to_variable = { THIS.kasmir_readiness = 5 } }
-					10 = { add_to_variable = { THIS.kasmir_readiness = 10 } }
-					10 = { add_to_variable = { THIS.kasmir_readiness = 20 } }
-				}
+				set_temp_variable = { border_war_add_readiness_amount = 12 }
+				border_war_add_readiness = yes
 			}
 		}
 
@@ -10905,7 +10902,7 @@ focus_tree = {
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus RAJ_pressuring_china"
 			add_command_power = 10
-			custom_effect_tooltip = kasmir_increase_readiness_TT
+			custom_effect_tooltip = border_war_increase_readiness_TT
 			add_opinion_modifier = {
 				modifier = drama
 				target = CHI
@@ -10915,11 +10912,8 @@ focus_tree = {
 				target = CHI
 			}
 			hidden_effect = {
-				random_list = {
-					10 = { add_to_variable = { THIS.kasmir_readiness = 5 } }
-					10 = { add_to_variable = { THIS.kasmir_readiness = 10 } }
-					10 = { add_to_variable = { THIS.kasmir_readiness = 20 } }
-				}
+				set_temp_variable = { border_war_add_readiness_amount = 12 }
+				border_war_add_readiness = yes
 			}
 		}
 
