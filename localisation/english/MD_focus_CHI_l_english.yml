@@ -1,5 +1,8 @@
 ﻿l_english:
 
+# Focus Tree
+china_focus: "China Focus Tree"
+
  2_per_capita_or_more_tt: "Their §YGDP per capita§! is §G2 or higher§!"
  CHI_Asset_Seizure_tt: "§YSeized asset:§! §G+25§! treasury, §G+3§! $CHI_bri_global_presence$"
  chi_bri.16.a: "We will manage the consequences"
