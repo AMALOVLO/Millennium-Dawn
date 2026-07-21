@@ -8457,8 +8457,14 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			add_to_variable = { CHI_arunachal_tension = 5 tooltip = CHI_arunachal_tension_change_tt }
-			add_to_variable = { CHI_arunachal_readiness = 15 tooltip = CHI_arunachal_readiness_change_tt }
+			custom_effect_tooltip = raj_chi_border_readiness_15_tt
+			custom_effect_tooltip = raj_chi_border_tension_5_tt
+			hidden_effect = {
+				set_temp_variable = { raj_chi_border_readiness_change = 15 }
+				raj_chi_border_add_readiness = yes
+				set_temp_variable = { raj_chi_border_tension_change = 5 }
+				raj_chi_border_add_tension = yes
+			}
 			newline = yes
 			BHU = { add_opinion_modifier = { target = CHI modifier = territorial_integrity_violation } }
 			every_other_country = {
@@ -9234,13 +9240,13 @@ focus_tree = {
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus CHI_Strike_Across_the_Himalayas"
-			activate_decision = CHI_arunachal_attack_982_from_589
-			activate_decision = CHI_arunachal_attack_475_from_589
-			activate_decision = attack_993_from_589
+			set_country_flag = raj_chi_border_offensive_unlocked
+			custom_effect_tooltip = raj_chi_border_offensive_unlocked_tt
 		}
 
 		bypass_effect = {
 			log = "[GetDateText]: [Root.GetName]: Focus CHI_Strike_Across_the_Himalayas"
+			set_country_flag = raj_chi_border_offensive_unlocked
 			982 = { add_core_of = CHI }
 			475 = { add_core_of = CHI }
 			993 = { add_core_of = CHI }

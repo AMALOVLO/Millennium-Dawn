@@ -9,8 +9,7 @@ v2.0.0
   - NEW SYSTEMS: United Nations, International UN Aid, International Recognition, Antarctica, Resource Storage, Expanded Economic Features
   - Expanded technology and special projects until the 2080s for tech based content and equipment to match
     - 50+ Special Projects
-  - [RAJ/PAK/CHI] Reworked border conflict system: extracted shared readiness/tension/progress logic into scripted effects and triggers, split Sino-Indian decisions into a dedicated file, and consolidated events into border_war_events.txt
-  - [RAJ/PAK/CHI] Reworked the Kashmir and Sino-Indian border conflict systems with shared readiness/tension/progress mechanics
+  - [RAJ/PAK/CHI] Reworked the border conflicts with separate bilateral readiness and tension, state-specific progress, garrison requirements, safe territorial claims, AI controls, and diplomatic crisis paths
   - New Content for North korea and South Korea post reuification and unification
   - North korea Mandate System  added and naval buildup decisions
   - [NKO] Added the Foreign Affairs Office (Second Economic Committee) arms-export mechanic: sell modern conventional arms to non-Western nations losing their wars and deploy Storm Corps intervention forces for political favour and hard currency. Each client permanently raises factory output and production efficiency, but raises international sanctions; lobby Russia or China to ease the pressure, and reach ten clients to unlock the Arsenal of the Multipolar World capstone
