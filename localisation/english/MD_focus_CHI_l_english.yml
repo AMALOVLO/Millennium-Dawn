@@ -1,5 +1,4 @@
 ﻿l_english:
-
 # Focus Tree
  china_focus: "China Focus Tree"
 
@@ -566,7 +565,7 @@
  CHI_plz_howitzer_program: "The PLZ Howitzer Program"
  CHI_plz_howitzer_program_desc: "The artillery, long the pride and the bottleneck of the army, goes fully self-propelled. The PLZ-05, a 155mm tracked howitzer in service from 2008, matches Western range and rate of fire and forms the gun line of every heavy brigade."
  CHI_Polar_Silk_Road: "Polar Silk Road"
- CHI_Polar_Silk_Road_desc: "Our Arctic Policy White Paper declares China a \"near-Arctic state\" and endorses the development of transpolar shipping routes as a northern extension of the Maritime Silk Road. Melting sea ice is making the Northern Sea Route commercially viable, cutting transit times between us and Europe by up to two weeks. We should claim our place in the Arctic's governance architecture before others close the door."
+ CHI_Polar_Silk_Road_desc: 'Our Arctic Policy White Paper declares China a "near-Arctic state" and endorses the development of transpolar shipping routes as a northern extension of the Maritime Silk Road. Melting sea ice is making the Northern Sea Route commercially viable, cutting transit times between us and Europe by up to two weeks. We should claim our place in the Arctic''s governance architecture before others close the door.'
  CHI_policy_banks_cdb: "Policy Banks"
  CHI_policy_banks_cdb_desc: "China Development Bank, Export-Import Bank of China, and Agricultural Development Bank of China form a parallel financing architecture that operates outside normal commercial constraints. CDB is now the world's largest development finance institution, larger than the World Bank and the Asian Development Bank combined, financing the Three Gorges Dam, high-speed rail, and over 600 billion US dollars in Belt and Road infrastructure loans across more than 100 countries. These three banks are not merely financial institutions; they are instruments of national strategy."
  CHI_politics_law_commision_realigned: "Political-Legal Commission Realigned"
@@ -710,7 +709,7 @@
  CHI_strategic_materials: "Strategic Material Supply Chains"
  CHI_strategic_materials_desc: "We control over 80 percent of global gallium and germanium refining capacity and dominate supply of fluorite, silicon metal, and rare earth elements used in semiconductor fabrication. Following US export controls, we impose export licensing on gallium and germanium, then add further restrictions on gallium arsenide compounds. Domestic policy redirects strategic material output toward our own fabs, reducing costs and securing supply continuity for foundries operating under entity-list constraints. The materials chokepoint runs in both directions."
  CHI_Strategic_Realignment: "The Bandung Spirit Revived"
- CHI_Strategic_Realignment_desc: "In Jakarta, 1955, Zhou Enlai and Jawaharlal Nehru shook hands for the cameras. \"Hindi-Chini bhai-bhai,\" chanted the crowd. Seven years later the mortars flew over the McMahon Line. Perhaps that handshake deserves a second life."
+ CHI_Strategic_Realignment_desc: 'In Jakarta, 1955, Zhou Enlai and Jawaharlal Nehru shook hands for the cameras. "Hindi-Chini bhai-bhai," chanted the crowd. Seven years later the mortars flew over the McMahon Line. Perhaps that handshake deserves a second life.'
  CHI_strategic_reserve_system: "The Strategic Reserve System"
  CHI_strategic_reserve_system_desc: "Depth is its own defence. A reformed reserve and mobilisation system stands ready to flood the front with trained manpower, ensuring that even a long war of attrition is one China can outlast."
  CHI_streamline_the_ranks: "Streamline the Ranks"
@@ -786,7 +785,7 @@
  CHI_the_diaoyu_sovereignty_declaration: "The Diaoyu Sovereignty Declaration"
  CHI_the_diaoyu_sovereignty_declaration_desc: "The Diaoyu Islands have been Chinese territory since the Ming dynasty. Japanese 'administration' is a colonial inheritance the world has tolerated for too long."
  CHI_The_Duterte_Pivot: "The Duterte Pivot"
- CHI_The_Duterte_Pivot_desc: "When President Duterte of the Philippines declared his country's \"separation\" from the United States and turned toward Beijing, he showed the region that a Southeast Asian leader can choose sovereignty over dependency. We should cultivate similar pivots elsewhere, quietly and patiently, until Washington's alliances become a question rather than an answer."
+ CHI_The_Duterte_Pivot_desc: 'When President Duterte of the Philippines declared his country''s "separation" from the United States and turned toward Beijing, he showed the region that a Southeast Asian leader can choose sovereignty over dependency. We should cultivate similar pivots elsewhere, quietly and patiently, until Washington''s alliances become a question rather than an answer.'
  CHI_The_Final_Compromise: "The Final Compromise"
  CHI_The_Final_Compromise_desc: "After years of patient diplomacy, we broker a final settlement accepted by both Koreas. Neither unification nor permanent division, the arrangement establishes a shared economic zone, demilitarized border crossings, and a joint Chinese-Korean monitoring commission. We emerge as the indispensable guarantor of peace on the peninsula."
  CHI_The_Five_Fingers_Doctrine: "The Five Fingers Doctrine"
@@ -979,7 +978,7 @@
  CHI_western_pipeline_corridor: "West-East Gas Pipeline"
  CHI_western_pipeline_corridor_desc: "The West-East Gas Pipeline runs 4,000 kilometres from the Tarim Basin in Xinjiang through Gansu, Shaanxi, and the Yangtze Delta to Shanghai. Once complete, it will displace coal in Yangtze Delta industry and reduce the particulate pollution choking our wealthiest coastal cities, binding the west's resources to the east's growth."
  CHI_Win_Win_Cooperation: "Community of Shared Future"
- CHI_Win_Win_Cooperation_desc: "After mounting international criticism of debt-trap financing, we reform our lending terms, introducing concessional rates, local labor requirements, and debt sustainability assessments. The \"win-win\" framing repositions the Belt and Road as a vehicle for mutual development rather than strategic leverage, and the critics find their arguments harder to sustain."
+ CHI_Win_Win_Cooperation_desc: 'After mounting international criticism of debt-trap financing, we reform our lending terms, introducing concessional rates, local labor requirements, and debt sustainability assessments. The "win-win" framing repositions the Belt and Road as a vehicle for mutual development rather than strategic leverage, and the critics find their arguments harder to sustain.'
  CHI_Wolf_Warrior_Diplomacy: "Wolf Warrior Diplomacy"
  CHI_Wolf_Warrior_Diplomacy_desc: "We will adopt an assertive, confrontational diplomatic stance. Our diplomats will aggressively defend our interests and challenge Western narratives wherever they find them. The goal is clear: replace the United States as the dominant global power."
  CHI_wolf_warrior_doctrine: "Wolf Warrior Diplomacy"
@@ -1066,7 +1065,7 @@
  CHI_beijing_communique_guarantor: "Guarantor of the Beijing Communique"
  CHI_beijing_communique_guarantor_desc: "China's role in brokering peace between two regional rivals has enhanced its standing as a responsible power. Diplomatic capital flows freely and relations are easier to maintain."
  CHI_blue_national_soil: "Blue National Soil"
- CHI_blue_national_soil_desc: "The official PRC doctrine designating sea space within the nine-dash line as \"blue national soil\": maritime territory as inalienable as any province on land. The framing makes concession politically impossible and redefines any foreign presence as trespass."
+ CHI_blue_national_soil_desc: 'The official PRC doctrine designating sea space within the nine-dash line as "blue national soil": maritime territory as inalienable as any province on land. The framing makes concession politically impossible and redefines any foreign presence as trespass.'
  CHI_blue_national_soil_militarised: "Blue National Soil Militarised"
  CHI_blue_national_soil_militarised_desc: "What began as an administrative doctrine has become an operational posture. PLAN and coast guard assets now enforce the blue national soil claim actively, treating incursions by foreign vessels as violations of Chinese domestic law."
  CHI_bo_ideological_consolidation: "Ideological Consolidation"
@@ -2964,7 +2963,7 @@
  chi_uighur.2.d: "A coordinated bomb attack on a busy market district has left casualties and shattered any sense of normalcy in the city. The East Turkestan Islamic Movement has claimed responsibility. Security forces are on high alert and Beijing demands a swift response."
  chi_uighur.2.t: "Bomb Attack Strikes Urumqi Market"
  chi_uighur.3.a: "Impose martial law in Urumqi"
- chi_uighur.3.b: "Mass detentions, \"re-education\" camps"
+ chi_uighur.3.b: 'Mass detentions, "re-education" camps'
  chi_uighur.3.c: "Negotiate with Uyghur community leaders"
  chi_uighur.3.d: "Tensions that have been building for months have spilled into open violence across Urumqi and several outlying districts. Clashes between Uyghur protesters and Han residents have overwhelmed local police. The scale of the unrest, reminiscent of the 2009 riots, demands an immediate decision from the Party centre."
  chi_uighur.3.t: "Xinjiang Erupts in Large-Scale Riots"
@@ -3038,10 +3037,10 @@
  china_scs.31.t: "2002 Declaration Reaffirmed"
  china_scs.32.a: "Welcome Manila into the new partnership."
  china_scs.32.b: "Maintain existing US alignment."
- china_scs.32.d: "President Duterte has delivered a speech in Beijing announcing the Philippines' \"separation\" from the United States and signalling openness to a new relationship with China. The statement has stunned Washington and delighted Beijing. Manila's position on the South China Sea arbitral award is now deliberately ambiguous."
+ china_scs.32.d: 'President Duterte has delivered a speech in Beijing announcing the Philippines'' "separation" from the United States and signalling openness to a new relationship with China. The statement has stunned Washington and delighted Beijing. Manila''s position on the South China Sea arbitral award is now deliberately ambiguous.'
  china_scs.32.t: "Manila at a Crossroads"
  china_scs.33.a: "A step toward regional stability."
- china_scs.33.d: "People's Daily reports that China and its partner have concluded a joint maritime development agreement, establishing a shared administrative framework for hydrocarbon exploration and fishing rights. The agreement is described as \"a model of win-win cooperation and the Maritime Silk Road in action.\" Claimant governments not party to the agreement decline to comment."
+ china_scs.33.d: 'People''s Daily reports that China and its partner have concluded a joint maritime development agreement, establishing a shared administrative framework for hydrocarbon exploration and fishing rights. The agreement is described as "a model of win-win cooperation and the Maritime Silk Road in action." Claimant governments not party to the agreement decline to comment.'
  china_scs.33.t: "Joint Maritime Development Agreement Signed"
  china_scs.34.a: "Offer a grace period and renegotiate."
  china_scs.34.b: "Enforce the original terms."
@@ -3049,7 +3048,7 @@
  china_scs.34.d: "The government of the partner state has announced it cannot meet the scheduled loan repayment on Chinese Belt and Road infrastructure financing. Domestic opposition politicians are demanding the terms be renegotiated; Beijing faces a choice between flexibility that preserves the relationship and firmness that preserves the financial precedent."
  china_scs.34.t: "Debt Renegotiation Demanded"
  china_scs.35.a: "A diplomatic triumph."
- china_scs.35.d: "For the first time, the ASEAN summit communique has included language explicitly endorsing bilateral management of South China Sea disputes and rejecting the involvement of \"external parties.\" The formulation was inserted at Chinese insistence and blocked the passage of language demanded by Vietnam and the Philippines. Washington has condemned the outcome."
+ china_scs.35.d: 'For the first time, the ASEAN summit communique has included language explicitly endorsing bilateral management of South China Sea disputes and rejecting the involvement of "external parties." The formulation was inserted at Chinese insistence and blocked the passage of language demanded by Vietnam and the Philippines. Washington has condemned the outcome.'
  china_scs.35.t: "ASEAN Summit Endorses Chinese Position"
  china_scs.36.a: "Renegotiate the terms."
  china_scs.36.b: "Enforce the original terms."
@@ -4364,7 +4363,7 @@
  CHI_SAR_national_security_framework_desc: "A unified national security apparatus is extended to cover all SAR territories. Coordination between People's Liberation Army garrisons, state security bureaux, and local police forces is formalised under central oversight."
 
  CHI_SAR_two_systems_commitment: "Commitment to Two Systems"
- CHI_SAR_two_systems_commitment_desc: "Beijing formally reaffirms the \"One Country, Two Systems\" principle for all eligible SARs. High-degree autonomy is guaranteed within the constitutional framework, signalling a preference for accommodation over integration."
+ CHI_SAR_two_systems_commitment_desc: 'Beijing formally reaffirms the "One Country, Two Systems" principle for all eligible SARs. High-degree autonomy is guaranteed within the constitutional framework, signalling a preference for accommodation over integration.'
  CHI_SAR_two_systems_commitment_tt: "Completing this §YNational Focus§! will unlock all §YTwo-System Focus Paths§!"
 
  CHI_SAR_research_sharing: "SAR Research Cooperation"
@@ -4379,7 +4378,7 @@
  CHI_SAR_one_system_declaration_tt: "Completing this §YNational Focus§! will unlock all §YOne-System Focus Paths§!"
 
  CHI_SAR_han_superiority: "Doctrine of Han Primacy"
- CHI_SAR_han_superiority_desc: "Beijing abandons the multi-ethnic state model in favour of a single national identity centred on the Han majority. Echoing the \"second-generation ethnic policy\" advanced by scholars such as Hu Angang and Hu Lianhe, ethnicity-based autonomy is wound down and assimilation across all regions is accelerated."
+ CHI_SAR_han_superiority_desc: 'Beijing abandons the multi-ethnic state model in favour of a single national identity centred on the Han majority. Echoing the "second-generation ethnic policy" advanced by scholars such as Hu Angang and Hu Lianhe, ethnicity-based autonomy is wound down and assimilation across all regions is accelerated.'
 
  CHI_HKG_greater_bay_area: "Greater Bay Area Initiative"
  CHI_HKG_greater_bay_area_desc: "Beijing and Hong Kong jointly launch the Guangdong-Hong Kong-Macao Greater Bay Area project, linking eleven cities into a single innovation and finance corridor. The scheme represents China's most ambitious regional integration programme since the Shenzhen Special Economic Zone."
@@ -4397,10 +4396,10 @@
  CHI_HKG_shenzhen_hk_stock_connect_desc: "A mutual market access programme links the Hong Kong and Shenzhen stock exchanges, allowing investors on both sides to trade in each other's listed equities. The scheme further cements Hong Kong's indispensable role as the gateway for cross-border capital flows."
 
  CHI_HKG_electoral_reform: "Electoral System Reform"
- CHI_HKG_electoral_reform_desc: "Beijing overhauls Hong Kong's Legislative Council election framework, reducing the directly elected seats and introducing a candidate vetting mechanism to ensure only \"patriots\" stand for office. The reform definitively shifts political power away from the pro-democracy opposition."
+ CHI_HKG_electoral_reform_desc: 'Beijing overhauls Hong Kong''s Legislative Council election framework, reducing the directly elected seats and introducing a candidate vetting mechanism to ensure only "patriots" stand for office. The reform definitively shifts political power away from the pro-democracy opposition.'
 
  CHI_HKG_media_freedom: "Press Freedom Safeguards"
- CHI_HKG_media_freedom_desc: "In a concession to civil society pressure, Beijing agrees to statutory protections for editorial independence in Hong Kong. International media organisations interpret the guarantee as a signal that the \"two systems\" model will be honoured through 2047."
+ CHI_HKG_media_freedom_desc: 'In a concession to civil society pressure, Beijing agrees to statutory protections for editorial independence in Hong Kong. International media organisations interpret the guarantee as a signal that the \"two systems\" model will be honoured through 2047.'
 
  CHI_HKG_censorship: "Internet and Media Censorship"
  CHI_HKG_censorship_desc: "Beijing directs Hong Kong authorities to align the city's internet and broadcast regulations with mainland standards. Websites hosting content deemed politically sensitive are blocked, and editors at major newspapers face pressure to self-censor."
@@ -4433,7 +4432,7 @@
  CHI_MAC_pearl_river_delta_desc: "Macao is formally incorporated into the Pearl River Delta economic zone, with infrastructure investment targeted at reducing its economic isolation. The Hong Kong-Zhuhai-Macao Bridge becomes the backbone of a new cross-boundary transport network."
 
  CHI_MAC_lotus_flower_economy: "Lotus Flower Economy"
- CHI_MAC_lotus_flower_economy_desc: "Macao launches an economic rebranding initiative anchored in the territory's distinctive identity as a Portuguese-Chinese SAR. Rather than targeting a single sector, the strategy repositions Macao as a \"world centre of tourism and leisure,\" a brand that frames all downstream diversification efforts and aligns with Beijing's vision for the Greater Bay Area."
+ CHI_MAC_lotus_flower_economy_desc: 'Macao launches an economic rebranding initiative anchored in the territory''s distinctive identity as a Portuguese-Chinese SAR. Rather than targeting a single sector, the strategy repositions Macao as a "world centre of tourism and leisure," a brand that frames all downstream diversification efforts and aligns with Beijing''s vision for the Greater Bay Area.'
 
  CHI_MAC_gambling_diversification: "Gambling Industry Diversification"
  CHI_MAC_gambling_diversification_desc: "For decades Macao's prosperity has rested on a single pillar: the casino floor. A deliberate turn toward digital services, e-commerce, and technology infrastructure widens the tax base beyond the gaming tables, cushioning the SAR against swings in tourist revenue while seeding a homegrown internet economy."
@@ -4470,7 +4469,7 @@
  CHI_TIB_return_dalai_lama_desc: "After extended back-channel negotiations, Beijing and the Dalai Lama's representatives reach an agreement permitting the Tibetan spiritual leader to return to Lhasa in a ceremonial capacity. The accord stops short of political autonomy but generates significant goodwill in international capitals."
 
  CHI_TIB_sinification: "Patriotic Education Campaign"
- CHI_TIB_sinification_desc: "The party launches a systematic programme of ideological re-education in Tibetan monasteries and schools, requiring denunciations of the Dalai Lama and pledges of loyalty to the motherland. The campaign is modelled on the 1990s \"Strike Hard\" initiative and managed by specially deployed work teams."
+ CHI_TIB_sinification_desc: 'The party launches a systematic programme of ideological re-education in Tibetan monasteries and schools, requiring denunciations of the Dalai Lama and pledges of loyalty to the motherland. The campaign is modelled on the 1990s "Strike Hard" initiative and managed by specially deployed work teams.'
 
  CHI_TIB_autonomy_preservation: "Genuine Autonomy Framework"
  CHI_TIB_autonomy_preservation_desc: "In response to international pressure and recurring unrest, Beijing opens negotiations with Dalai Lama representatives on expanding cultural and religious autonomy. The Strasbourg Proposal and the Middle Way Approach serve as the basis for back-channel discussions."
@@ -4506,10 +4505,10 @@
  CHI_ETK_oilfield_development_desc: "The Xinjiang SAR government negotiates joint venture agreements with national energy companies for Tarim Basin exploration, securing an unprecedented share of extraction royalties for regional infrastructure. The oilfields are among the largest in China and underpin the region's fiscal independence."
 
  CHI_ETK_strike_hard_campaign: "Strike Hard Campaign"
- CHI_ETK_strike_hard_campaign_desc: "The \"Strike Hard, Maximum Pressure\" campaign targeting Uyghur separatist networks is relaunched at unprecedented scale, incorporating digital surveillance, mass detention, and the systematic suppression of religious practice. International human rights organisations document widespread abuses."
+ CHI_ETK_strike_hard_campaign_desc: 'The "Strike Hard, Maximum Pressure" campaign targeting Uyghur separatist networks is relaunched at unprecedented scale, incorporating digital surveillance, mass detention, and the systematic suppression of religious practice. International human rights organisations document widespread abuses.'
 
  CHI_ETK_education_centres: "Vocational Skills Education Centres"
- CHI_ETK_education_centres_desc: "A network of extrajudicial detention facilities, described officially as \"Vocational Skills Education and Training Centres,\" is established across Xinjiang. A comprehensive digital surveillance grid covering facial recognition, DNA databases, and smartphone monitoring is deployed throughout the region."
+ CHI_ETK_education_centres_desc: 'A network of extrajudicial detention facilities, described officially as "Vocational Skills Education and Training Centres," is established across Xinjiang. A comprehensive digital surveillance grid covering facial recognition, DNA databases, and smartphone monitoring is deployed throughout the region.'
 
  CHI_ETK_total_survaillance_infrastructure: "Total Surveillance Infrastructure"
  CHI_ETK_total_survaillance_infrastructure_desc: "A region-wide surveillance grid is constructed across Xinjiang, integrating facial recognition cameras, biometric checkpoints, and mandatory smartphone monitoring software. The system grants authorities near-total visibility over population movements and online activity."
@@ -4837,7 +4836,6 @@
  china_sar.033.d: "The United States has rejected China's pressure campaign and publicly reaffirmed its commitment to Taiwan's security. The administration has announced a new arms package for Taipei and convened emergency consultations with Japan and Australia. Beijing's campaign has failed, and has hardened opposition in Washington."
  china_sar.033.a: "A setback, but not a defeat. We will reassess our approach."
 
-
  china_sar.001.t: "Proposal: Cross-Strait Services Trade Agreement"
  china_sar.001.d: "Beijing has put forward the Cross-Strait Services Trade Agreement, opening major service sectors on both sides to freer trade and investment. The proposal would grant mainland firms access to Taiwan's banking, healthcare, and retail sectors. Supporters argue it would deepen economic integration; critics warn it hands Beijing structural leverage over Taiwan's economy."
  china_sar.001.a: "Sign the agreement. Economic integration serves our long-term interests."
@@ -5126,8 +5124,6 @@
  CHI_han_settlement_medium_desc: "A larger organised resettlement effort moves tens of thousands of Han workers and their families into Nei Mongol. New industrial zones and agricultural parcels are designated to absorb the incoming population."
  CHI_han_settlement_large: "Mass Han Resettlement Programme"
  CHI_han_settlement_large_desc: "A large-scale demographic engineering campaign transfers hundreds of thousands of Han settlers into Nei Mongol in a single coordinated wave. The long-term impact on the region's ethnic composition is substantial, though local resistance rises sharply in the near term."
-
-
 
  CHI_TAI_resend_economic_track: "Renew Cooperation Proposal: Economic Framework"
  CHI_TAI_resend_economic_track_desc: "Taipei declined the previous overture. Approach the Taiwan's government once more with the cross-strait economic cooperation framework."
