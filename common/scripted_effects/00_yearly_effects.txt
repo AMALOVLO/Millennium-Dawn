@@ -129,9 +129,12 @@ MD_event_on_startup_events = {
 		country_event = { id = transnistria.43 days = 1 } # Information Event
 	}
 	AFG = {
-		news_event = { id = AfghanistanNews.11 days = 30 random_days = 15 }
-		news_event = { id = AfghanistanNews.13 days = 90 random_days = 30 }
-		news_event = { id = AfghanistanNews.14 days = 105 random_days = 36 }
+		news_event = { id = AFG_news.11 days = 30 random_days = 15 }
+		news_event = { id = AFG_news.13 days = 90 random_days = 30 }
+		news_event = { id = AFG_news.14 days = 105 random_days = 36 }
+		country_event = { id = AFG_events.44 days = 85 random_days = 20 }
+		country_event = { id = AFG_events.45 days = 130 random_days = 20 }
+		country_event = { id = AFG_events.48 days = 152 random_days = 20 }
 	}
 	TUR = {
 		country_event = { id = Turkey.5 days = 120 }
@@ -472,7 +475,8 @@ trigger_year_2001_events = {
 		country_event = { id = JAP_historical.131201001 days = 335 } #The Birth of Princess Aiko
 	}
 	AFG = {
-		country_event = { id = Afghanistan.3 days = 195 random_days = 365 }
+		country_event = { id = AFG_events.3 days = 195 random_days = 365 }
+		news_event = { id = AFG_news.20 days = 95 random_days = 20 }
 	}
 	BRA = {
 		# Kidnapping of Patricia Abravenel
@@ -1792,7 +1796,7 @@ trigger_year_2011_events = {
 		country_event = { id = germany_yearly.40 days = 1 }
 	}
 	AFG = {
-		country_event = { id = Afghanistan.15 days = 260 random_days = 720 }
+		country_event = { id = AFG_events.15 days = 260 random_days = 720 }
 	}
 	CAN = {
 		#A Orange Wave
