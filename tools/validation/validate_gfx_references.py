@@ -136,6 +136,12 @@ _SLOC_KEY_REF = re.compile(r'\blocalization_key\s*=\s*"(GFX_[^"\[]+)"')
 # the unused-sprite check, so over-matching (e.g. a token in a string) is safe.
 _GFX_TOKEN_REF = re.compile(r"GFX_[A-Za-z0-9_.\-]+")
 _HASH_COMMENT = re.compile(r"#[^\n]*")
+
+# Localisation sprite reference: `£name` renders the sprite `GFX_name` (an
+# optional `|frame` suffix may follow). Party, idea and money icons are often
+# referenced this way and nowhere else, so skipping .yml mis-reports them as
+# unused. `£GFX_name` also occurs, hence both spellings are recorded.
+_LOC_SPRITE_REF = re.compile(r"£([A-Za-z0-9_]+)")
 # Idea `picture = X` resolves to the sprite `GFX_idea_X` (X is not GFX_-prefixed).
 _IDEA_PICTURE_REF = re.compile(r"^\s*picture\s*=\s*([A-Za-z0-9_.\-]+)", re.MULTILINE)
 
@@ -270,6 +276,35 @@ def _is_likely_vanilla(name: str) -> bool:
     return any(name.startswith(p) for p in _VANILLA_PREFIXES)
 
 
+# Equipment icons are resolved by the engine from the archetype name, optionally
+# with a country prefix (GFX_util_vehicle_1_medium, GFX_AFG_util_vehicle_1_medium).
+# They are never named literally in script, so the unused check needs the
+# equipment list to tell a real orphan from an engine-resolved icon.
+_EQUIPMENT_ICON_RE = re.compile(
+    r"^GFX_(?:[A-Z]{3}_)?(.+?)_(?:small|medium|large)$"
+)
+_EQUIPMENT_ENTRY_RE = re.compile(r"^\t([A-Za-z][A-Za-z0-9_]*)\s*=\s*\{", re.MULTILINE)
+
+
+def _load_equipment_names(mod_path: str) -> FrozenSet[str]:
+    """Return every equipment archetype/variant declared in common/units/equipment."""
+    names: Set[str] = set()
+    root = os.path.join(mod_path, "common", "units", "equipment")
+    for dirpath, _dirnames, filenames in os.walk(root):
+        for fn in filenames:
+            if not fn.endswith(".txt"):
+                continue
+            try:
+                with open(
+                    os.path.join(dirpath, fn), encoding="utf-8-sig", errors="replace"
+                ) as fh:
+                    text = _HASH_COMMENT.sub("", fh.read())
+            except OSError:
+                continue
+            names.update(_EQUIPMENT_ENTRY_RE.findall(text))
+    return frozenset(names)
+
+
 # Per-file parsers take (filepath, mod_path) and disk-cache their result keyed
 # on file content, so a warm run only re-parses changed files. .gfx/.gui scans
 # cover all of interface/, so the cache is the bulk of the speedup.
@@ -392,6 +427,24 @@ def _parse_script_refs(args: Tuple[str, str]) -> List[str]:
 
     return disk_cache.per_file_cached_by_content(
         mod_path, "gfx_ref.script", filepath, raw, _compute
+    )
+
+
+def _parse_loc_refs(args: Tuple[str, str]) -> List[str]:
+    """Return every GFX sprite a localisation .yml file references via `£name`."""
+    filepath, mod_path = args
+    raw = _read_raw(filepath)
+    if raw is None:
+        return []
+
+    def _compute() -> List[str]:
+        refs: Set[str] = set()
+        for name in _LOC_SPRITE_REF.findall(raw):
+            refs.add(name if name.startswith("GFX_") else "GFX_" + name)
+        return sorted(refs)
+
+    return disk_cache.per_file_cached_by_content(
+        mod_path, "gfx_ref.loc", filepath, raw, _compute
     )
 
 
@@ -524,6 +577,24 @@ class Validator(BaseValidator):
             refs.update(batch)
         self.log(
             f"  Scanned {len(files)} script files; found {len(refs)} distinct GFX references"
+        )
+        return refs
+
+    def _collect_loc_refs(self) -> Set[str]:
+        """Return every GFX sprite referenced from localisation via `£name`.
+
+        Every language is scanned, not just English: a `£` reference is a real
+        sprite use whichever file it sits in.
+        """
+        self._log_section("Collecting GFX £sprite references from localisation/*.yml")
+        files = self._collect_files(["localisation/**/*.yml"], ignore_staged=True)
+        refs: Set[str] = set()
+        for batch in self._pool_map(
+            _parse_loc_refs, [(f, self.mod_path) for f in files]
+        ):
+            refs.update(batch)
+        self.log(
+            f"  Scanned {len(files)} localisation files; found {len(refs)} distinct GFX references"
         )
         return refs
 
@@ -685,12 +756,19 @@ class Validator(BaseValidator):
             self.log("  Skipping unused-sprite check in staged mode.")
             return
 
+        equipment = _load_equipment_names(self.mod_path)
+
+        def _is_equipment_icon(name: str) -> bool:
+            m = _EQUIPMENT_ICON_RE.match(name)
+            return bool(m) and m.group(1) in equipment
+
         unused = sorted(
             s
             for s in defined
             if s not in all_refs
             and not _is_flag_sprite(s)
             and not _is_likely_vanilla(s)
+            and not _is_equipment_icon(s)
         )
 
         if not unused:
@@ -706,14 +784,6 @@ class Validator(BaseValidator):
             (f"Unused GFX sprite '{s}' (defined but never referenced)", "", 0)
             for s in display
         ]
-        if remainder > 0:
-            issues.append(
-                (
-                    f"... and {remainder} more unused sprites (run without --staged to see all)",
-                    "",
-                    0,
-                )
-            )
 
         self._report(
             issues,
@@ -722,6 +792,14 @@ class Validator(BaseValidator):
             severity=Severity.WARNING,
             category="unused-sprite",
         )
+        # Logged, not reported: a truncation notice is not a finding. Emitting it
+        # as one makes report consumers count it as an issue and fail to parse a
+        # sprite name out of it.
+        if remainder > 0:
+            self.log(
+                f"  ... and {remainder} more unused sprites not shown "
+                f"(limit {_UNUSED_SPRITE_LIMIT})"
+            )
 
     def run_validations(self) -> None:
         defined, mod_defined = self._build_gfx_definitions()
@@ -768,6 +846,7 @@ class Validator(BaseValidator):
         all_referenced: Set[str] = {r[0] for r in gui_refs + sgui_refs + sloc_refs}
         if not self.staged_only:
             all_referenced |= self._collect_script_refs()
+            all_referenced |= self._collect_loc_refs()
         self._check_unused_sprites(mod_defined, all_referenced)
 
 
