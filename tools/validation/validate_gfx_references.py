@@ -280,9 +280,11 @@ def _is_likely_vanilla(name: str) -> bool:
 # with a country prefix (GFX_util_vehicle_1_medium, GFX_AFG_util_vehicle_1_medium).
 # They are never named literally in script, so the unused check needs the
 # equipment list to tell a real orphan from an engine-resolved icon.
-_EQUIPMENT_ICON_RE = re.compile(
-    r"^GFX_(?:[A-Z]{3}_)?(.+?)_(?:small|medium|large)$"
-)
+_EQUIPMENT_ICON_RE = re.compile(r"^GFX_(?:[A-Z]{3}_)?(.+?)_(?:small|medium|large)$")
+# Only entries directly inside `equipments = { }` are equipment. Matching any
+# one-tab key would also pick up container keys such as `values` in
+# tank_filters.txt, which could mask a genuinely dead sprite.
+_EQUIPMENTS_BLOCK_RE = re.compile(r"^equipments\s*=\s*\{", re.MULTILINE)
 _EQUIPMENT_ENTRY_RE = re.compile(r"^\t([A-Za-z][A-Za-z0-9_]*)\s*=\s*\{", re.MULTILINE)
 
 
@@ -301,7 +303,10 @@ def _load_equipment_names(mod_path: str) -> FrozenSet[str]:
                     text = _HASH_COMMENT.sub("", fh.read())
             except OSError:
                 continue
-            names.update(_EQUIPMENT_ENTRY_RE.findall(text))
+            for block in _EQUIPMENTS_BLOCK_RE.finditer(text):
+                body, _end = extract_block_from_text(text, block.start())
+                if body:
+                    names.update(_EQUIPMENT_ENTRY_RE.findall(body))
     return frozenset(names)
 
 
@@ -798,7 +803,8 @@ class Validator(BaseValidator):
         if remainder > 0:
             self.log(
                 f"  ... and {remainder} more unused sprites not shown "
-                f"(limit {_UNUSED_SPRITE_LIMIT})"
+                f"(limit {_UNUSED_SPRITE_LIMIT})",
+                "always",
             )
 
     def run_validations(self) -> None:

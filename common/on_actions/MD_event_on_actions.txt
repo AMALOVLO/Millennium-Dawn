@@ -1157,10 +1157,10 @@ on_actions = {
 				add_state_core = 415
 				set_capital = { state = 414 }
 				TAL = { news_event = { id = AFG_news.1 hours = 6 } }
+				#Massoud's resistance rises once the Taliban have consolidated. Queued here, inside
+				#the one-shot guard, so exactly one check is ever in flight per civil-war outcome.
+				country_event = { id = AFG_events.34 days = 180 random_days = 120 }
 			}
-			#Massoud's resistance rises once the Taliban have consolidated. The event's own trigger
-			#gates it, and it clears GLOBAL_afghanistan_civil_war_over so it can only resolve once.
-			country_event = { id = AFG_events.34 days = 180 random_days = 120 }
 		}
 	}
 
