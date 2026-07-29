@@ -578,3 +578,40 @@ def test_parse_loc_refs_ignores_hash_comments(tmp_path):
     )
 
     assert _parse_loc_refs((str(loc), str(tmp_path))) == ["GFX_live"]
+
+
+def test_parse_loc_refs_adds_gfx_prefix(tmp_path):
+    """`£name` (no GFX_ prefix in the loc file) resolves to sprite GFX_name."""
+    from validate_gfx_references import _parse_loc_refs
+
+    loc = tmp_path / "test_l_english.yml"
+    loc.write_text(' party: "£party_icon"\n', encoding="utf-8")
+
+    assert _parse_loc_refs((str(loc), str(tmp_path))) == ["GFX_party_icon"]
+
+
+def test_parse_loc_refs_keeps_dotted_and_hyphenated_names(tmp_path):
+    # Regression: _LOC_SPRITE_REF used to stop at `.`/`-`, truncating names like
+    # GFX_CTC.5 and GFX_Polizistin-Kiesewetter to GFX_CTC / GFX_Polizistin.
+    from validate_gfx_references import _parse_loc_refs
+
+    loc = tmp_path / "test_l_english.yml"
+    loc.write_text(
+        ' a: "£GFX_CTC.5"\n b: "£GFX_Polizistin-Kiesewetter"\n',
+        encoding="utf-8",
+    )
+
+    assert _parse_loc_refs((str(loc), str(tmp_path))) == [
+        "GFX_CTC.5",
+        "GFX_Polizistin-Kiesewetter",
+    ]
+
+
+def test_parse_loc_refs_strips_sentence_final_period(tmp_path):
+    # A trailing `.` ending a sentence must not be absorbed into the name.
+    from validate_gfx_references import _parse_loc_refs
+
+    loc = tmp_path / "test_l_english.yml"
+    loc.write_text(' a: "Costs £command_power."\n', encoding="utf-8")
+
+    assert _parse_loc_refs((str(loc), str(tmp_path))) == ["GFX_command_power"]

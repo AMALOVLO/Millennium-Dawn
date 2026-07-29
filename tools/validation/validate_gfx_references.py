@@ -141,8 +141,9 @@ _HASH_COMMENT = re.compile(r"#[^\n]*")
 # Localisation sprite reference: `£name` renders the sprite `GFX_name` (an
 # optional `|frame` suffix may follow). Party, idea and money icons are often
 # referenced this way and nowhere else, so skipping .yml mis-reports them as
-# unused. `£GFX_name` also occurs, hence both spellings are recorded.
-_LOC_SPRITE_REF = re.compile(r"£([A-Za-z0-9_]+)")
+# unused. `£GFX_name` also occurs, hence both spellings are recorded. Names can
+# carry `.` frame suffixes and `-`, same as _GFX_TOKEN_REF.
+_LOC_SPRITE_REF = re.compile(r"£([A-Za-z0-9_.\-]+)")
 # Idea `picture = X` resolves to the sprite `GFX_idea_X` (X is not GFX_-prefixed).
 _IDEA_PICTURE_REF = re.compile(r"^\s*picture\s*=\s*([A-Za-z0-9_.\-]+)", re.MULTILINE)
 
@@ -447,6 +448,10 @@ def _parse_loc_refs(args: Tuple[str, str]) -> List[str]:
         text = "\n".join(strip_inline_comment(line) for line in raw.splitlines())
         refs: Set[str] = set()
         for name in _LOC_SPRITE_REF.findall(text):
+            # Sentence-final punctuation (`£command_power.`) is not part of the name.
+            name = name.rstrip(".-")
+            if not name:
+                continue
             refs.add(name if name.startswith("GFX_") else "GFX_" + name)
         return sorted(refs)
 
@@ -764,6 +769,11 @@ class Validator(BaseValidator):
             return
 
         equipment = _load_equipment_names(self.mod_path)
+        if not equipment:
+            self.log(
+                "  No equipment archetypes found under common/units/equipment"
+                " — equipment-icon exemption disabled"
+            )
 
         def _is_equipment_icon(name: str) -> bool:
             m = _EQUIPMENT_ICON_RE.match(name)
