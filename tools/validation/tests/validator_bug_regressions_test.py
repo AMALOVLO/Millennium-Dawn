@@ -512,7 +512,9 @@ def test_dynamic_ref_pattern_strips_scope_prefix():
 
     from validate_set_variables import _dynamic_ref_pattern
 
-    rx = re.compile(_dynamic_ref_pattern("this.mep_party_[p_n3]"))
+    pat = _dynamic_ref_pattern("this.mep_party_[p_n3]")
+    assert pat is not None
+    rx = re.compile(pat)
     assert rx.match("mep_party_0")
 
 
@@ -562,3 +564,17 @@ def test_strip_comments_removes_trailing_hash_comment():
     out = _strip_comments(text)
     assert "GFX_real" in out
     assert "GFX_commented" not in out
+
+
+def test_parse_loc_refs_ignores_hash_comments(tmp_path):
+    from validate_gfx_references import _parse_loc_refs
+
+    loc = tmp_path / "test_l_english.yml"
+    loc.write_text(
+        "l_english:\n"
+        '# disabled: "£GFX_commented"\n'
+        ' live: "£GFX_live" # £GFX_trailing\n',
+        encoding="utf-8",
+    )
+
+    assert _parse_loc_refs((str(loc), str(tmp_path))) == ["GFX_live"]

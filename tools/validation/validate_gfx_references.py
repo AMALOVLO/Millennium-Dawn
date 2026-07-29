@@ -22,6 +22,7 @@ from shared_utils import (
     extract_block_from_text,
     find_hoi4_install,
     line_for_offset,
+    strip_inline_comment,
 )
 from validator_common import (
     BaseValidator,
@@ -443,8 +444,9 @@ def _parse_loc_refs(args: Tuple[str, str]) -> List[str]:
         return []
 
     def _compute() -> List[str]:
+        text = "\n".join(strip_inline_comment(line) for line in raw.splitlines())
         refs: Set[str] = set()
-        for name in _LOC_SPRITE_REF.findall(raw):
+        for name in _LOC_SPRITE_REF.findall(text):
             refs.add(name if name.startswith("GFX_") else "GFX_" + name)
         return sorted(refs)
 

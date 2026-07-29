@@ -1,11 +1,11 @@
 # Millennium Dawn Validation Tools
 
-Content validators for the Millennium Dawn mod. All validators share a common CLI interface and can be run individually or all at once via `run_all_validators.py`.
+Content validators for the Millennium Dawn mod. All validators share a common CLI interface. Cacheable validators can be run all at once via `run_all_validators.py`.
 
 ## Quick Start
 
 ```bash
-# Run all validators (from the mod root)
+# Run all cacheable validators (from the mod root)
 python3 tools/validation/run_all_validators.py
 
 # Strict mode: exit non-zero if any issues found (used in CI)
@@ -59,7 +59,7 @@ These cross-reference the entire codebase. A disk cache under `.validation_cache
 | ------------------------------- | ---------------------------------------------------------------------------------- |
 | **validate_set_variables.py**   | Variables set with `set_variable` are actually used somewhere                      |
 | **validate_unused_scripted.py** | Scripted effects/triggers defined but never called                                 |
-| **validate_unused_textures.py** | Texture files not referenced in any `.gfx` file; `.gfx` entries with missing files |
+| **validate_unused_textures.py** | Texture files not referenced in any `.gfx` file; `.gfx` entries with missing files. Manual-only. |
 | **validate_variables.py**       | Country/state/global flags and event targets: cleared-but-not-set, missing, unused |
 
 ---
@@ -158,7 +158,7 @@ All validators extend `BaseValidator` from `validator_common.py`. To add a new v
 3. Use `self.add_error(category, message, file, line)` / `self.add_warning(...)` to record issues
 4. To parse many files, call `self.parse_files_cached(patterns, namespace, parse_fn)` — it's staged-aware, case-preserving, and disk-caches each parse keyed on file content. Use a unique `namespace` string per call to avoid cache collisions.
 5. Call `run_validator_main(YourValidator, "Description")` at the bottom
-6. `run_all_validators.py` auto-discovers it on the next run — no registration needed
+6. `run_all_validators.py` auto-discovers it on the next run unless it is intentionally manual-only
 
 `validator_common.py` also provides `strip_comments()`, `FileOpener`, `DataCleaner`, `HOI4_BUILTIN_BLOCKS`, and `scan_meta_constructed_names()` for use in validators.
 

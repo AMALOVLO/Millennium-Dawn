@@ -8,12 +8,16 @@ import os
 import re
 import sys
 from pathlib import Path
-from typing import Dict, List, Set, Tuple
+from typing import Dict, List, Optional, Set, Tuple
 
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), ".."))
 
 import disk_cache
-from shared_utils import extract_block_from_text, find_hoi4_install
+from shared_utils import (
+    extract_block_from_text,
+    find_hoi4_install,
+    strip_inline_comment,
+)
 from validate_gfx_references import _GFX_SPRITE_TYPES
 from validator_common import (
     BaseValidator,
@@ -256,7 +260,7 @@ class Validator(BaseValidator):
         )
         self.log("  Use --hoi4-path to specify the installation directory.")
 
-    def _find_all_gfx_files(self, search_path: str = None) -> List[str]:
+    def _find_all_gfx_files(self, search_path: Optional[str] = None) -> List[str]:
         """Find all .gfx files in the specified directory (mod or vanilla)."""
         gfx_files = []
         base_path = search_path if search_path else self.mod_path
@@ -283,7 +287,7 @@ class Validator(BaseValidator):
         return gfx_files
 
     def _get_all_referenced_textures(
-        self, search_path: str = None, label: str = "mod"
+        self, search_path: Optional[str] = None, label: str = "mod"
     ) -> Tuple[Set[str], Set[str]]:
         """
         Get all texture files referenced in .gfx files using multiprocessing.
@@ -389,7 +393,10 @@ class Validator(BaseValidator):
         for filepath in loc_files:
             try:
                 with open(filepath, encoding="utf-8-sig", errors="replace") as f:
-                    stems.update(_TEXT_ICON_REF.findall(f.read()))
+                    text = "\n".join(
+                        strip_inline_comment(line) for line in f.read().splitlines()
+                    )
+                    stems.update(_TEXT_ICON_REF.findall(text))
             except Exception:
                 continue
 
