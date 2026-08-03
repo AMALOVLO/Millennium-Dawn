@@ -1,23 +1,30 @@
 RAJ_PAK_border_conflict_category = {
 
 	pak_raj_border_train_army = {
+
 		desc = pak_raj_border_train_army_desc
+
 		icon = GFX_decision_generic_military
+
 		days_remove = 15
+
 		days_re_enable = 30
+
 		fire_only_once = no
+
 		custom_cost_text = command_power_more_than_20
+
 		custom_cost_trigger = { command_power > 20 }
 
 		available = {
 			pak_raj_border_available = yes
 			NOT = {
 				OR = {
-				has_decision = pak_raj_border_train_army
-				has_decision = pak_raj_border_train_mechanized
-				has_decision = pak_raj_border_train_artillery
-				has_decision = pak_raj_border_stage_incursion
-				has_decision = pak_raj_border_shell_positions
+					has_decision = pak_raj_border_train_army
+					has_decision = pak_raj_border_train_mechanized
+					has_decision = pak_raj_border_train_artillery
+					has_decision = pak_raj_border_stage_incursion
+					has_decision = pak_raj_border_shell_positions
 				}
 			}
 			has_equipment = { infantry_weapons_type > 30 }
@@ -56,23 +63,30 @@ RAJ_PAK_border_conflict_category = {
 	}
 
 	pak_raj_border_train_mechanized = {
+
 		desc = pak_raj_border_train_mechanized_desc
+
 		icon = GFX_decision_generic_military
+
 		days_remove = 15
+
 		days_re_enable = 45
+
 		fire_only_once = no
+
 		custom_cost_text = command_power_more_than_20
+
 		custom_cost_trigger = { command_power > 20 }
 
 		available = {
 			pak_raj_border_available = yes
 			NOT = {
 				OR = {
-				has_decision = pak_raj_border_train_army
-				has_decision = pak_raj_border_train_mechanized
-				has_decision = pak_raj_border_train_artillery
-				has_decision = pak_raj_border_stage_incursion
-				has_decision = pak_raj_border_shell_positions
+					has_decision = pak_raj_border_train_army
+					has_decision = pak_raj_border_train_mechanized
+					has_decision = pak_raj_border_train_artillery
+					has_decision = pak_raj_border_stage_incursion
+					has_decision = pak_raj_border_shell_positions
 				}
 			}
 			has_equipment = { medium_tank_amphibious_chassis > 5 }
@@ -111,23 +125,30 @@ RAJ_PAK_border_conflict_category = {
 	}
 
 	pak_raj_border_train_artillery = {
+
 		desc = pak_raj_border_train_artillery_desc
+
 		icon = GFX_decision_generic_military
+
 		days_remove = 15
+
 		days_re_enable = 30
+
 		fire_only_once = no
+
 		custom_cost_text = command_power_more_than_20
+
 		custom_cost_trigger = { command_power > 20 }
 
 		available = {
 			pak_raj_border_available = yes
 			NOT = {
 				OR = {
-				has_decision = pak_raj_border_train_army
-				has_decision = pak_raj_border_train_mechanized
-				has_decision = pak_raj_border_train_artillery
-				has_decision = pak_raj_border_stage_incursion
-				has_decision = pak_raj_border_shell_positions
+					has_decision = pak_raj_border_train_army
+					has_decision = pak_raj_border_train_mechanized
+					has_decision = pak_raj_border_train_artillery
+					has_decision = pak_raj_border_stage_incursion
+					has_decision = pak_raj_border_shell_positions
 				}
 			}
 			has_equipment = { artillery_equipment > 10 }
@@ -159,23 +180,30 @@ RAJ_PAK_border_conflict_category = {
 	}
 
 	pak_raj_border_stage_incursion = {
+
 		desc = pak_raj_border_stage_incursion_desc
+
 		icon = GFX_decision_generic_military
+
 		days_remove = 15
+
 		days_re_enable = 30
+
 		fire_only_once = no
+
 		custom_cost_text = command_power_more_than_20
+
 		custom_cost_trigger = { command_power > 20 }
 
 		available = {
 			pak_raj_border_available = yes
 			NOT = {
 				OR = {
-				has_decision = pak_raj_border_train_army
-				has_decision = pak_raj_border_train_mechanized
-				has_decision = pak_raj_border_train_artillery
-				has_decision = pak_raj_border_stage_incursion
-				has_decision = pak_raj_border_shell_positions
+					has_decision = pak_raj_border_train_army
+					has_decision = pak_raj_border_train_mechanized
+					has_decision = pak_raj_border_train_artillery
+					has_decision = pak_raj_border_stage_incursion
+					has_decision = pak_raj_border_shell_positions
 				}
 			}
 			has_equipment = { infantry_weapons_type > 100 }
@@ -214,23 +242,30 @@ RAJ_PAK_border_conflict_category = {
 	}
 
 	pak_raj_border_shell_positions = {
+
 		desc = pak_raj_border_shell_positions_desc
+
 		icon = GFX_decision_generic_military
+
 		days_remove = 15
+
 		days_re_enable = 45
+
 		fire_only_once = no
+
 		custom_cost_text = command_power_more_than_20
+
 		custom_cost_trigger = { command_power > 20 }
 
 		available = {
 			pak_raj_border_available = yes
 			NOT = {
 				OR = {
-				has_decision = pak_raj_border_train_army
-				has_decision = pak_raj_border_train_mechanized
-				has_decision = pak_raj_border_train_artillery
-				has_decision = pak_raj_border_stage_incursion
-				has_decision = pak_raj_border_shell_positions
+					has_decision = pak_raj_border_train_army
+					has_decision = pak_raj_border_train_mechanized
+					has_decision = pak_raj_border_train_artillery
+					has_decision = pak_raj_border_stage_incursion
+					has_decision = pak_raj_border_shell_positions
 				}
 			}
 			has_equipment = { artillery_equipment > 15 }
@@ -269,10 +304,15 @@ RAJ_PAK_border_conflict_category = {
 	}
 
 	pak_raj_border_negotiate = {
+
 		desc = pak_raj_border_negotiate_desc
+
 		icon = GFX_decision_generic_political_discourse
+
 		cost = 75
+
 		fire_only_once = no
+
 		days_re_enable = 90
 
 		visible = {
@@ -302,7 +342,6 @@ RAJ_PAK_border_conflict_category = {
 					pak_raj_border_crisis_resolve_peacefully = yes
 				}
 			}
-
 			if = {
 				limit = {
 					has_global_flag = GLOBAL_pak_raj_border_crisis_resolved_peacefully
@@ -323,10 +362,15 @@ RAJ_PAK_border_conflict_category = {
 	}
 
 	pak_raj_border_issue_ultimatum = {
+
 		desc = pak_raj_border_issue_ultimatum_desc
+
 		icon = GFX_decision_generic_territorial_pressure
+
 		cost = 50
+
 		fire_only_once = no
+
 		days_re_enable = 60
 
 		visible = {
@@ -363,13 +407,19 @@ RAJ_PAK_border_conflict_category = {
 	}
 
 	pak_raj_border_stand_down = {
+
 		desc = pak_raj_border_stand_down_desc
+
 		icon = GFX_decision_generic_political_discourse
+
 		cost = 50
+
 		fire_only_once = no
+
 		days_re_enable = 30
 
 		visible = { has_global_flag = GLOBAL_pak_raj_border_crisis_active }
+
 		available = { pak_raj_border_pair_valid = yes }
 
 		complete_effect = {
@@ -401,9 +451,13 @@ RAJ_PAK_border_conflict_category = {
 	}
 
 	pak_raj_border_attack_427_from_420 = {
+
 		desc = pak_raj_border_attack_427_from_420_desc
+
 		days_remove = 10
+
 		days_re_enable = 150
+
 		fire_only_once = no
 
 		highlight_states = { highlight_states_trigger = { state = 427 } }
@@ -477,9 +531,13 @@ RAJ_PAK_border_conflict_category = {
 	}
 
 	pak_raj_border_attack_420_from_427 = {
+
 		desc = pak_raj_border_attack_420_from_427_desc
+
 		days_remove = 10
+
 		days_re_enable = 150
+
 		fire_only_once = no
 
 		highlight_states = { highlight_states_trigger = { state = 420 } }
@@ -553,9 +611,13 @@ RAJ_PAK_border_conflict_category = {
 	}
 
 	pak_raj_border_attack_420_from_418 = {
+
 		desc = pak_raj_border_attack_420_from_418_desc
+
 		days_remove = 10
+
 		days_re_enable = 150
+
 		fire_only_once = no
 
 		highlight_states = { highlight_states_trigger = { state = 420 } }
@@ -629,9 +691,13 @@ RAJ_PAK_border_conflict_category = {
 	}
 
 	pak_raj_border_attack_429_from_563 = {
+
 		desc = pak_raj_border_attack_429_from_563_desc
+
 		days_remove = 10
+
 		days_re_enable = 150
+
 		fire_only_once = no
 
 		highlight_states = { highlight_states_trigger = { state = 429 } }
@@ -705,9 +771,13 @@ RAJ_PAK_border_conflict_category = {
 	}
 
 	pak_raj_border_attack_563_from_429 = {
+
 		desc = pak_raj_border_attack_563_from_429_desc
+
 		days_remove = 10
+
 		days_re_enable = 150
+
 		fire_only_once = no
 
 		highlight_states = { highlight_states_trigger = { state = 563 } }
@@ -781,9 +851,13 @@ RAJ_PAK_border_conflict_category = {
 	}
 
 	pak_raj_border_attack_427_from_428 = {
+
 		desc = pak_raj_border_attack_427_from_428_desc
+
 		days_remove = 10
+
 		days_re_enable = 150
+
 		fire_only_once = no
 
 		highlight_states = { highlight_states_trigger = { state = 427 } }
@@ -857,9 +931,13 @@ RAJ_PAK_border_conflict_category = {
 	}
 
 	pak_raj_border_attack_429_from_431 = {
+
 		desc = pak_raj_border_attack_429_from_431_desc
+
 		days_remove = 10
+
 		days_re_enable = 150
+
 		fire_only_once = no
 
 		highlight_states = { highlight_states_trigger = { state = 429 } }
@@ -933,9 +1011,13 @@ RAJ_PAK_border_conflict_category = {
 	}
 
 	pak_raj_border_attack_563_from_422 = {
+
 		desc = pak_raj_border_attack_563_from_422_desc
+
 		days_remove = 10
+
 		days_re_enable = 150
+
 		fire_only_once = no
 
 		highlight_states = { highlight_states_trigger = { state = 563 } }
@@ -1009,9 +1091,13 @@ RAJ_PAK_border_conflict_category = {
 	}
 
 	pak_raj_border_attack_573_from_984 = {
+
 		desc = pak_raj_border_attack_573_from_984_desc
+
 		days_remove = 10
+
 		days_re_enable = 150
+
 		fire_only_once = no
 
 		highlight_states = { highlight_states_trigger = { state = 573 } }
@@ -1085,9 +1171,13 @@ RAJ_PAK_border_conflict_category = {
 	}
 
 	pak_raj_border_attack_984_from_573 = {
+
 		desc = pak_raj_border_attack_984_from_573_desc
+
 		days_remove = 10
+
 		days_re_enable = 150
+
 		fire_only_once = no
 
 		highlight_states = { highlight_states_trigger = { state = 984 } }
@@ -1161,9 +1251,13 @@ RAJ_PAK_border_conflict_category = {
 	}
 
 	pak_raj_border_attack_573_from_422 = {
+
 		desc = pak_raj_border_attack_573_from_422_desc
+
 		days_remove = 10
+
 		days_re_enable = 150
+
 		fire_only_once = no
 
 		highlight_states = { highlight_states_trigger = { state = 573 } }
@@ -1237,9 +1331,13 @@ RAJ_PAK_border_conflict_category = {
 	}
 
 	pak_raj_border_attack_426_from_984 = {
+
 		desc = pak_raj_border_attack_426_from_984_desc
+
 		days_remove = 10
+
 		days_re_enable = 150
+
 		fire_only_once = no
 
 		highlight_states = { highlight_states_trigger = { state = 426 } }
@@ -1313,9 +1411,13 @@ RAJ_PAK_border_conflict_category = {
 	}
 
 	pak_raj_border_attack_984_from_426 = {
+
 		desc = pak_raj_border_attack_984_from_426_desc
+
 		days_remove = 10
+
 		days_re_enable = 150
+
 		fire_only_once = no
 
 		highlight_states = { highlight_states_trigger = { state = 984 } }
@@ -1389,9 +1491,13 @@ RAJ_PAK_border_conflict_category = {
 	}
 
 	pak_raj_border_attack_426_from_416 = {
+
 		desc = pak_raj_border_attack_426_from_416_desc
+
 		days_remove = 10
+
 		days_re_enable = 150
+
 		fire_only_once = no
 
 		highlight_states = { highlight_states_trigger = { state = 426 } }
@@ -1465,9 +1571,13 @@ RAJ_PAK_border_conflict_category = {
 	}
 
 	pak_raj_border_attack_426_from_987 = {
+
 		desc = pak_raj_border_attack_426_from_987_desc
+
 		days_remove = 10
+
 		days_re_enable = 150
+
 		fire_only_once = no
 
 		highlight_states = { highlight_states_trigger = { state = 426 } }
@@ -1541,9 +1651,13 @@ RAJ_PAK_border_conflict_category = {
 	}
 
 	pak_raj_border_attack_987_from_426 = {
+
 		desc = pak_raj_border_attack_987_from_426_desc
+
 		days_remove = 10
+
 		days_re_enable = 150
+
 		fire_only_once = no
 
 		highlight_states = { highlight_states_trigger = { state = 987 } }
@@ -1617,9 +1731,13 @@ RAJ_PAK_border_conflict_category = {
 	}
 
 	pak_raj_border_attack_987_from_436 = {
+
 		desc = pak_raj_border_attack_987_from_436_desc
+
 		days_remove = 10
+
 		days_re_enable = 150
+
 		fire_only_once = no
 
 		highlight_states = { highlight_states_trigger = { state = 987 } }
@@ -1693,9 +1811,13 @@ RAJ_PAK_border_conflict_category = {
 	}
 
 	pak_raj_border_attack_984_from_432 = {
+
 		desc = pak_raj_border_attack_984_from_432_desc
+
 		days_remove = 10
+
 		days_re_enable = 150
+
 		fire_only_once = no
 
 		highlight_states = { highlight_states_trigger = { state = 984 } }
@@ -1769,9 +1891,13 @@ RAJ_PAK_border_conflict_category = {
 	}
 
 	pak_raj_border_capture_420 = {
+
 		desc = pak_raj_border_capture_420_desc
+
 		days_remove = 30
+
 		days_re_enable = 180
+
 		fire_only_once = no
 
 		highlight_states = { highlight_states_trigger = { state = 420 } }
@@ -1818,9 +1944,13 @@ RAJ_PAK_border_conflict_category = {
 	}
 
 	pak_raj_border_capture_427 = {
+
 		desc = pak_raj_border_capture_427_desc
+
 		days_remove = 30
+
 		days_re_enable = 180
+
 		fire_only_once = no
 
 		highlight_states = { highlight_states_trigger = { state = 427 } }
@@ -1867,9 +1997,13 @@ RAJ_PAK_border_conflict_category = {
 	}
 
 	pak_raj_border_capture_429 = {
+
 		desc = pak_raj_border_capture_429_desc
+
 		days_remove = 30
+
 		days_re_enable = 180
+
 		fire_only_once = no
 
 		highlight_states = { highlight_states_trigger = { state = 429 } }
@@ -1916,9 +2050,13 @@ RAJ_PAK_border_conflict_category = {
 	}
 
 	pak_raj_border_capture_563 = {
+
 		desc = pak_raj_border_capture_563_desc
+
 		days_remove = 30
+
 		days_re_enable = 180
+
 		fire_only_once = no
 
 		highlight_states = { highlight_states_trigger = { state = 563 } }
@@ -1965,9 +2103,13 @@ RAJ_PAK_border_conflict_category = {
 	}
 
 	pak_raj_border_capture_573 = {
+
 		desc = pak_raj_border_capture_573_desc
+
 		days_remove = 30
+
 		days_re_enable = 180
+
 		fire_only_once = no
 
 		highlight_states = { highlight_states_trigger = { state = 573 } }
@@ -2014,9 +2156,13 @@ RAJ_PAK_border_conflict_category = {
 	}
 
 	pak_raj_border_capture_426 = {
+
 		desc = pak_raj_border_capture_426_desc
+
 		days_remove = 30
+
 		days_re_enable = 180
+
 		fire_only_once = no
 
 		highlight_states = { highlight_states_trigger = { state = 426 } }
@@ -2063,9 +2209,13 @@ RAJ_PAK_border_conflict_category = {
 	}
 
 	pak_raj_border_capture_987 = {
+
 		desc = pak_raj_border_capture_987_desc
+
 		days_remove = 30
+
 		days_re_enable = 180
+
 		fire_only_once = no
 
 		highlight_states = { highlight_states_trigger = { state = 987 } }
@@ -2112,9 +2262,13 @@ RAJ_PAK_border_conflict_category = {
 	}
 
 	pak_raj_border_capture_984 = {
+
 		desc = pak_raj_border_capture_984_desc
+
 		days_remove = 30
+
 		days_re_enable = 180
+
 		fire_only_once = no
 
 		highlight_states = { highlight_states_trigger = { state = 984 } }
@@ -2159,5 +2313,4 @@ RAJ_PAK_border_conflict_category = {
 			modifier = { factor = 0 NOT = { pak_raj_border_ai_should_capture = yes } }
 		}
 	}
-
 }

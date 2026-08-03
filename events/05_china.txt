@@ -264,7 +264,6 @@ country_event = {
 		ai_chance = { base = 20 }
 	}
 
-
 }
 
 country_event = {
@@ -312,7 +311,6 @@ country_event = {
 		set_country_flag = { flag = CHI_recent_provocation days = 60 value = 1 }
 		ai_chance = { base = 30 }
 	}
-
 
 }
 
@@ -413,7 +411,6 @@ country_event = {
 		ai_chance = { base = 10 }
 	}
 
-
 }
 
 country_event = {
@@ -479,7 +476,6 @@ country_event = {
 		ai_chance = { base = 10 }
 	}
 
-
 }
 
 country_event = {
@@ -507,7 +503,6 @@ country_event = {
 		}
 		ai_chance = { base = 30 }
 	}
-
 
 }
 
@@ -553,7 +548,6 @@ country_event = {
 			}
 		}
 	}
-
 
 }
 
@@ -622,7 +616,6 @@ country_event = {
 		}
 	}
 
-
 }
 
 country_event = {
@@ -666,7 +659,6 @@ country_event = {
 			}
 		}
 	}
-
 
 }
 
@@ -749,7 +741,6 @@ country_event = {
 		}
 	}
 
-
 }
 
 country_event = {
@@ -815,7 +806,6 @@ country_event = {
 			}
 		}
 	}
-
 
 }
 
@@ -920,7 +910,6 @@ country_event = {
 		}
 	}
 
-
 }
 
 country_event = {
@@ -965,7 +954,6 @@ country_event = {
 		}
 	}
 
-
 }
 
 country_event = {
@@ -1006,7 +994,6 @@ country_event = {
 			}
 		}
 	}
-
 
 }
 
@@ -1055,7 +1042,6 @@ country_event = {
 			}
 		}
 	}
-
 
 }
 
@@ -1948,7 +1934,6 @@ country_event = {
 		ai_chance = { base = 5 }
 	}
 
-
 }
 
 country_event = {
@@ -2001,7 +1986,6 @@ country_event = {
 		add_political_power = 25
 		ai_chance = { base = 1 }
 	}
-
 
 }
 
@@ -2188,7 +2172,6 @@ country_event = {
 		ai_chance = { base = 10 }
 	}
 
-
 }
 
 country_event = {
@@ -2249,7 +2232,6 @@ country_event = {
 		ai_chance = { base = 10 }
 	}
 
-
 }
 
 country_event = {
@@ -2276,7 +2258,6 @@ country_event = {
 		clamp_variable = { var = CHI_chinese_aggression min = -50 max = 50 }
 		ai_chance = { base = 10 }
 	}
-
 
 }
 
@@ -2771,7 +2752,6 @@ country_event = {
 		add_timed_idea = { idea = CHI_south_china_sea_dominance_window days = 180 }
 		ai_chance = { base = 10 }
 	}
-
 
 }
 
@@ -4258,7 +4238,6 @@ country_event = {
 		}
 	}
 
-
 }
 
 news_event = {
@@ -4867,7 +4846,6 @@ country_event = {
 			base = 100
 		}
 	}
-
 
 }
 
@@ -6279,6 +6257,7 @@ country_event = {
 			}
 		}
 	}
+
 }
 
 country_event = {
@@ -6361,7 +6340,6 @@ country_event = {
 			}
 		}
 	}
-
 
 }
 
@@ -6553,7 +6531,6 @@ country_event = {
 		}
 	}
 
-
 }
 
 country_event = {
@@ -6604,7 +6581,6 @@ country_event = {
 			}
 		}
 	}
-
 
 }
 
@@ -6756,7 +6732,6 @@ country_event = {
 		}
 	}
 
-
 }
 
 country_event = {
@@ -6794,7 +6769,6 @@ country_event = {
 			base = 40
 		}
 	}
-
 
 }
 
@@ -6839,7 +6813,6 @@ country_event = {
 			}
 		}
 	}
-
 
 }
 
@@ -6892,7 +6865,6 @@ country_event = {
 		}
 	}
 
-
 }
 country_event = {
 	id = CHI_foreign.222
@@ -6935,7 +6907,6 @@ country_event = {
 		}
 	}
 
-
 }
 
 country_event = {
@@ -6976,6 +6947,7 @@ country_event = {
 			base = 40
 		}
 	}
+
 }
 country_event = {
 	id = CHI_foreign.224
@@ -10218,7 +10190,6 @@ country_event = {
 		ai_chance = { base = 100 }
 	}
 
-
 }
 
 country_event = {
@@ -11082,4 +11053,5 @@ country_event = {
 		}
 		ai_chance = { base = 1 }
 	}
+
 }

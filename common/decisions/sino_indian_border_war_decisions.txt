@@ -1,23 +1,30 @@
 RAJ_CHI_border_conflict_category = {
 
 	raj_chi_border_train_army = {
+
 		desc = raj_chi_border_train_army_desc
+
 		icon = GFX_decision_generic_military
+
 		days_remove = 15
+
 		days_re_enable = 30
+
 		fire_only_once = no
+
 		custom_cost_text = command_power_more_than_20
+
 		custom_cost_trigger = { command_power > 20 }
 
 		available = {
 			raj_chi_border_available = yes
 			NOT = {
 				OR = {
-				has_decision = raj_chi_border_train_army
-				has_decision = raj_chi_border_train_mechanized
-				has_decision = raj_chi_border_train_artillery
-				has_decision = raj_chi_border_stage_incursion
-				has_decision = raj_chi_border_shell_positions
+					has_decision = raj_chi_border_train_army
+					has_decision = raj_chi_border_train_mechanized
+					has_decision = raj_chi_border_train_artillery
+					has_decision = raj_chi_border_stage_incursion
+					has_decision = raj_chi_border_shell_positions
 				}
 			}
 			has_equipment = { infantry_weapons_type > 30 }
@@ -56,23 +63,30 @@ RAJ_CHI_border_conflict_category = {
 	}
 
 	raj_chi_border_train_mechanized = {
+
 		desc = raj_chi_border_train_mechanized_desc
+
 		icon = GFX_decision_generic_military
+
 		days_remove = 15
+
 		days_re_enable = 45
+
 		fire_only_once = no
+
 		custom_cost_text = command_power_more_than_20
+
 		custom_cost_trigger = { command_power > 20 }
 
 		available = {
 			raj_chi_border_available = yes
 			NOT = {
 				OR = {
-				has_decision = raj_chi_border_train_army
-				has_decision = raj_chi_border_train_mechanized
-				has_decision = raj_chi_border_train_artillery
-				has_decision = raj_chi_border_stage_incursion
-				has_decision = raj_chi_border_shell_positions
+					has_decision = raj_chi_border_train_army
+					has_decision = raj_chi_border_train_mechanized
+					has_decision = raj_chi_border_train_artillery
+					has_decision = raj_chi_border_stage_incursion
+					has_decision = raj_chi_border_shell_positions
 				}
 			}
 			has_equipment = { medium_tank_amphibious_chassis > 5 }
@@ -111,23 +125,30 @@ RAJ_CHI_border_conflict_category = {
 	}
 
 	raj_chi_border_train_artillery = {
+
 		desc = raj_chi_border_train_artillery_desc
+
 		icon = GFX_decision_generic_military
+
 		days_remove = 15
+
 		days_re_enable = 30
+
 		fire_only_once = no
+
 		custom_cost_text = command_power_more_than_20
+
 		custom_cost_trigger = { command_power > 20 }
 
 		available = {
 			raj_chi_border_available = yes
 			NOT = {
 				OR = {
-				has_decision = raj_chi_border_train_army
-				has_decision = raj_chi_border_train_mechanized
-				has_decision = raj_chi_border_train_artillery
-				has_decision = raj_chi_border_stage_incursion
-				has_decision = raj_chi_border_shell_positions
+					has_decision = raj_chi_border_train_army
+					has_decision = raj_chi_border_train_mechanized
+					has_decision = raj_chi_border_train_artillery
+					has_decision = raj_chi_border_stage_incursion
+					has_decision = raj_chi_border_shell_positions
 				}
 			}
 			has_equipment = { artillery_equipment > 10 }
@@ -159,23 +180,30 @@ RAJ_CHI_border_conflict_category = {
 	}
 
 	raj_chi_border_stage_incursion = {
+
 		desc = raj_chi_border_stage_incursion_desc
+
 		icon = GFX_decision_generic_military
+
 		days_remove = 15
+
 		days_re_enable = 30
+
 		fire_only_once = no
+
 		custom_cost_text = command_power_more_than_20
+
 		custom_cost_trigger = { command_power > 20 }
 
 		available = {
 			raj_chi_border_available = yes
 			NOT = {
 				OR = {
-				has_decision = raj_chi_border_train_army
-				has_decision = raj_chi_border_train_mechanized
-				has_decision = raj_chi_border_train_artillery
-				has_decision = raj_chi_border_stage_incursion
-				has_decision = raj_chi_border_shell_positions
+					has_decision = raj_chi_border_train_army
+					has_decision = raj_chi_border_train_mechanized
+					has_decision = raj_chi_border_train_artillery
+					has_decision = raj_chi_border_stage_incursion
+					has_decision = raj_chi_border_shell_positions
 				}
 			}
 			has_equipment = { infantry_weapons_type > 100 }
@@ -214,23 +242,30 @@ RAJ_CHI_border_conflict_category = {
 	}
 
 	raj_chi_border_shell_positions = {
+
 		desc = raj_chi_border_shell_positions_desc
+
 		icon = GFX_decision_generic_military
+
 		days_remove = 15
+
 		days_re_enable = 45
+
 		fire_only_once = no
+
 		custom_cost_text = command_power_more_than_20
+
 		custom_cost_trigger = { command_power > 20 }
 
 		available = {
 			raj_chi_border_available = yes
 			NOT = {
 				OR = {
-				has_decision = raj_chi_border_train_army
-				has_decision = raj_chi_border_train_mechanized
-				has_decision = raj_chi_border_train_artillery
-				has_decision = raj_chi_border_stage_incursion
-				has_decision = raj_chi_border_shell_positions
+					has_decision = raj_chi_border_train_army
+					has_decision = raj_chi_border_train_mechanized
+					has_decision = raj_chi_border_train_artillery
+					has_decision = raj_chi_border_stage_incursion
+					has_decision = raj_chi_border_shell_positions
 				}
 			}
 			has_equipment = { artillery_equipment > 15 }
@@ -269,10 +304,15 @@ RAJ_CHI_border_conflict_category = {
 	}
 
 	raj_chi_border_negotiate = {
+
 		desc = raj_chi_border_negotiate_desc
+
 		icon = GFX_decision_generic_political_discourse
+
 		cost = 75
+
 		fire_only_once = no
+
 		days_re_enable = 90
 
 		visible = {
@@ -302,7 +342,6 @@ RAJ_CHI_border_conflict_category = {
 					raj_chi_border_crisis_cleanup = yes
 				}
 			}
-
 		}
 
 		ai_will_do = {
@@ -312,9 +351,13 @@ RAJ_CHI_border_conflict_category = {
 	}
 
 	raj_chi_border_attack_475_from_589 = {
+
 		desc = raj_chi_border_attack_475_from_589_desc
+
 		days_remove = 10
+
 		days_re_enable = 150
+
 		fire_only_once = no
 
 		highlight_states = { highlight_states_trigger = { state = 475 } }
@@ -392,9 +435,13 @@ RAJ_CHI_border_conflict_category = {
 	}
 
 	raj_chi_border_attack_475_from_473 = {
+
 		desc = raj_chi_border_attack_475_from_473_desc
+
 		days_remove = 10
+
 		days_re_enable = 150
+
 		fire_only_once = no
 
 		highlight_states = { highlight_states_trigger = { state = 475 } }
@@ -472,9 +519,13 @@ RAJ_CHI_border_conflict_category = {
 	}
 
 	raj_chi_border_attack_982_from_589 = {
+
 		desc = raj_chi_border_attack_982_from_589_desc
+
 		days_remove = 10
+
 		days_re_enable = 150
+
 		fire_only_once = no
 
 		highlight_states = { highlight_states_trigger = { state = 982 } }
@@ -552,9 +603,13 @@ RAJ_CHI_border_conflict_category = {
 	}
 
 	raj_chi_border_attack_982_from_455 = {
+
 		desc = raj_chi_border_attack_982_from_455_desc
+
 		days_remove = 10
+
 		days_re_enable = 150
+
 		fire_only_once = no
 
 		highlight_states = { highlight_states_trigger = { state = 982 } }
@@ -632,9 +687,13 @@ RAJ_CHI_border_conflict_category = {
 	}
 
 	raj_chi_border_attack_591_from_993 = {
+
 		desc = raj_chi_border_attack_591_from_993_desc
+
 		days_remove = 10
+
 		days_re_enable = 150
+
 		fire_only_once = no
 
 		highlight_states = { highlight_states_trigger = { state = 591 } }
@@ -708,9 +767,13 @@ RAJ_CHI_border_conflict_category = {
 	}
 
 	raj_chi_border_attack_993_from_591 = {
+
 		desc = raj_chi_border_attack_993_from_591_desc
+
 		days_remove = 10
+
 		days_re_enable = 150
+
 		fire_only_once = no
 
 		highlight_states = { highlight_states_trigger = { state = 993 } }
@@ -788,9 +851,13 @@ RAJ_CHI_border_conflict_category = {
 	}
 
 	raj_chi_border_attack_993_from_589 = {
+
 		desc = raj_chi_border_attack_993_from_589_desc
+
 		days_remove = 10
+
 		days_re_enable = 150
+
 		fire_only_once = no
 
 		highlight_states = { highlight_states_trigger = { state = 993 } }
@@ -868,9 +935,13 @@ RAJ_CHI_border_conflict_category = {
 	}
 
 	raj_chi_border_attack_993_from_428 = {
+
 		desc = raj_chi_border_attack_993_from_428_desc
+
 		days_remove = 10
+
 		days_re_enable = 150
+
 		fire_only_once = no
 
 		highlight_states = { highlight_states_trigger = { state = 993 } }
@@ -948,9 +1019,13 @@ RAJ_CHI_border_conflict_category = {
 	}
 
 	raj_chi_border_attack_591_from_589 = {
+
 		desc = raj_chi_border_attack_591_from_589_desc
+
 		days_remove = 10
+
 		days_re_enable = 150
+
 		fire_only_once = no
 
 		highlight_states = { highlight_states_trigger = { state = 591 } }
@@ -1024,9 +1099,13 @@ RAJ_CHI_border_conflict_category = {
 	}
 
 	raj_chi_border_capture_475 = {
+
 		desc = raj_chi_border_capture_475_desc
+
 		days_remove = 30
+
 		days_re_enable = 180
+
 		fire_only_once = no
 
 		highlight_states = { highlight_states_trigger = { state = 475 } }
@@ -1073,9 +1152,13 @@ RAJ_CHI_border_conflict_category = {
 	}
 
 	raj_chi_border_capture_982 = {
+
 		desc = raj_chi_border_capture_982_desc
+
 		days_remove = 30
+
 		days_re_enable = 180
+
 		fire_only_once = no
 
 		highlight_states = { highlight_states_trigger = { state = 982 } }
@@ -1122,9 +1205,13 @@ RAJ_CHI_border_conflict_category = {
 	}
 
 	raj_chi_border_capture_591 = {
+
 		desc = raj_chi_border_capture_591_desc
+
 		days_remove = 30
+
 		days_re_enable = 180
+
 		fire_only_once = no
 
 		highlight_states = { highlight_states_trigger = { state = 591 } }
@@ -1171,9 +1258,13 @@ RAJ_CHI_border_conflict_category = {
 	}
 
 	raj_chi_border_capture_993 = {
+
 		desc = raj_chi_border_capture_993_desc
+
 		days_remove = 30
+
 		days_re_enable = 180
+
 		fire_only_once = no
 
 		highlight_states = { highlight_states_trigger = { state = 993 } }
@@ -1218,5 +1309,4 @@ RAJ_CHI_border_conflict_category = {
 			modifier = { factor = 0 NOT = { raj_chi_border_ai_should_capture = yes } }
 		}
 	}
-
 }

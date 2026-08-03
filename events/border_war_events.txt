@@ -20,6 +20,7 @@ country_event = {
 		add_war_support = -0.01
 		add_manpower = -20
 	}
+
 }
 
 country_event = {
@@ -35,6 +36,7 @@ country_event = {
 		add_war_support = -0.02
 		add_manpower = -10
 	}
+
 }
 
 country_event = {
@@ -49,6 +51,7 @@ country_event = {
 		log = "[GetDateText]: [This.GetName]: border_war_tension_failure.1.a executed"
 		add_war_support = -0.03
 	}
+
 }
 
 country_event = {
@@ -59,6 +62,7 @@ country_event = {
 	is_triggered_only = yes
 
 	option = { name = border_war_operation_blocked.1.a }
+
 }
 
 country_event = {
@@ -76,6 +80,7 @@ country_event = {
 		set_country_flag = { flag = pak_raj_border_recently_active value = 1 days = 365 }
 		pak_raj_border_finish_outcome = yes
 	}
+
 }
 
 country_event = {
@@ -93,6 +98,7 @@ country_event = {
 		set_country_flag = { flag = pak_raj_border_recently_active value = 1 days = 365 }
 		pak_raj_border_finish_outcome = yes
 	}
+
 }
 
 country_event = {
@@ -110,6 +116,7 @@ country_event = {
 		set_country_flag = { flag = pak_raj_border_recently_active value = 1 days = 365 }
 		pak_raj_border_finish_outcome = yes
 	}
+
 }
 
 country_event = {
@@ -127,6 +134,7 @@ country_event = {
 		set_country_flag = { flag = raj_chi_border_recently_active value = 1 days = 365 }
 		raj_chi_border_finish_outcome = yes
 	}
+
 }
 
 country_event = {
@@ -144,6 +152,7 @@ country_event = {
 		set_country_flag = { flag = raj_chi_border_recently_active value = 1 days = 365 }
 		raj_chi_border_finish_outcome = yes
 	}
+
 }
 
 country_event = {
@@ -161,6 +170,7 @@ country_event = {
 		set_country_flag = { flag = raj_chi_border_recently_active value = 1 days = 365 }
 		raj_chi_border_finish_outcome = yes
 	}
+
 }
 
 country_event = {
@@ -408,6 +418,7 @@ country_event = {
 			modifier = { factor = 3 has_global_flag = GLOBAL_border_war_ai_aggressive }
 		}
 	}
+
 }
 
 country_event = {
@@ -465,6 +476,7 @@ country_event = {
 			modifier = { factor = 0.2 has_global_flag = GLOBAL_border_war_ai_aggressive }
 		}
 	}
+
 }
 
 country_event = {
@@ -510,6 +522,7 @@ country_event = {
 			modifier = { factor = 0.2 has_global_flag = GLOBAL_border_war_ai_aggressive }
 		}
 	}
+
 }
 
 country_event = {
@@ -717,6 +730,7 @@ country_event = {
 			modifier = { factor = 2 has_opinion = { target = FROM value < 0 } }
 		}
 	}
+
 }
 
 country_event = {
@@ -920,6 +934,7 @@ country_event = {
 			modifier = { factor = 0 has_global_flag = GLOBAL_border_war_ai_aggressive }
 		}
 	}
+
 }
 
 country_event = {
@@ -968,6 +983,7 @@ country_event = {
 			modifier = { factor = 0.3 has_global_flag = GLOBAL_border_war_ai_aggressive }
 		}
 	}
+
 }
 
 country_event = {
@@ -1009,6 +1025,7 @@ country_event = {
 			modifier = { factor = 2 has_opinion = { target = FROM value > 24 } }
 		}
 	}
+
 }
 
 country_event = {
@@ -1039,6 +1056,7 @@ country_event = {
 		name = pak_raj_border_crisis.7.b
 		ai_chance = { base = 2 }
 	}
+
 }
 
 country_event = {
@@ -1092,6 +1110,7 @@ country_event = {
 			modifier = { factor = 0.2 has_opinion = { target = USA value > 24 } }
 		}
 	}
+
 }
 
 country_event = {
@@ -1102,6 +1121,7 @@ country_event = {
 	is_triggered_only = yes
 
 	option = { name = pak_raj_border_crisis.9.a }
+
 }
 
 country_event = {
@@ -1118,6 +1138,7 @@ country_event = {
 		add_war_support = 0.05
 		add_stability = 0.03
 	}
+
 }
 
 country_event = {
@@ -1128,6 +1149,7 @@ country_event = {
 	is_triggered_only = yes
 
 	option = { name = pak_raj_border_crisis.11.a }
+
 }
 
 country_event = {
@@ -1251,6 +1273,7 @@ country_event = {
 			modifier = { factor = 0 strength_ratio = { tag = FROM ratio < 0.8 } }
 		}
 	}
+
 }
 
 country_event = {
@@ -1374,6 +1397,7 @@ country_event = {
 			modifier = { factor = 2 has_opinion = { target = FROM value > 24 } }
 		}
 	}
+
 }
 
 country_event = {
@@ -1389,6 +1413,7 @@ country_event = {
 		add_political_power = 25
 		add_stability = 0.02
 	}
+
 }
 
 country_event = {
@@ -1399,4 +1424,5 @@ country_event = {
 	is_triggered_only = yes
 
 	option = { name = raj_chi_border_crisis.5.a }
+
 }

@@ -11,37 +11,42 @@ country_event = {
 	id = indian_event.1
 	title = indian_event.1.t
 	desc = indian_event.1.d
+	picture = GFX_RAJ_generic
 	is_triggered_only = yes
 	fire_only_once = yes
-	picture = GFX_RAJ_generic
+
 	option = {
 		name = indian_event.1.a
 		log = "[GetDateText]: [This.GetName]: indian_event.1.a executed"
 		ai_chance = { base = 1 }
 	}
+
 }
 
 country_event = {
 	id = indian_event.2
 	title = indian_event.2.t
 	desc = indian_event.2.d
+	picture = GFX_RAJ_generic
 	is_triggered_only = yes
 	fire_only_once = yes
-	picture = GFX_RAJ_generic
+
 	option = {
 		name = indian_event.2.a
 		log = "[GetDateText]: [This.GetName]: indian_event.2.a executed"
 		ai_chance = { base = 1 }
 	}
+
 }
 
 country_event = {
 	id = indian_event.3
 	title = indian_event.3.t
 	desc = indian_event.3.d
+	picture = GFX_mrt_ssp_construction
 	is_triggered_only = yes
 	fire_only_once = yes
-	picture = GFX_mrt_ssp_construction
+
 	option = {
 		name = indian_event.3.a
 		log = "[GetDateText]: [This.GetName]: indian_event.3.a executed"
@@ -58,6 +63,7 @@ country_event = {
 		set_temp_variable = { influence_target = ROOT }
 		change_influence_percentage = yes
 	}
+
 	option = {
 		name = indian_event.3.b
 		log = "[GetDateText]: [This.GetName]: indian_event.3.b executed"
@@ -75,17 +81,17 @@ country_event = {
 		set_temp_variable = { influence_target = ROOT }
 		change_influence_percentage = yes
 	}
+
 }
 
 news_event = {
 	id = RAJ_eastas.1
 	title = RAJ_eastas.1.t
 	desc = RAJ_eastas.1.d
-
 	picture = GFX_world_stockmarket
-
 	is_triggered_only = yes
 	major = yes
+
 	trigger = {
 		NOT = { has_war_with = SOV }
 		NOT = { has_war_with = JAP }
@@ -95,7 +101,6 @@ news_event = {
 	option = {
 		name = RAJ_eastas.1.o1
 		log = "[GetDateText]: [This.GetName]: RAJ_eastas.1.o1 executed"
-
 		add_opinion_modifier = { target = SOV modifier = east_asia_summit }
 		reverse_add_opinion_modifier = { target = SOV modifier = east_asia_summit }
 		add_opinion_modifier = { target = JAP modifier = east_asia_summit }
@@ -103,15 +108,17 @@ news_event = {
 		add_opinion_modifier = { target = LAO modifier = east_asia_summit }
 		reverse_add_opinion_modifier = { target = LAO modifier = east_asia_summit }
 	}
+
 }
 
 country_event = {
 	id = indian_event.4
 	title = indian_event.4.t
 	desc = indian_event.4.d
+	picture = GFX_mrt_ssp_construction
 	is_triggered_only = yes
 	fire_only_once = yes
-	picture = GFX_mrt_ssp_construction
+
 	option = {
 		name = indian_event.4.a
 		log = "[GetDateText]: [This.GetName]: indian_event.4.a executed"
@@ -128,6 +135,7 @@ country_event = {
 		set_temp_variable = { influence_target = ROOT }
 		change_influence_percentage = yes
 	}
+
 	option = {
 		name = indian_event.4.b
 		log = "[GetDateText]: [This.GetName]: indian_event.4.b executed"
@@ -145,15 +153,17 @@ country_event = {
 		set_temp_variable = { influence_target = ROOT }
 		change_influence_percentage = yes
 	}
+
 }
 
 country_event = {
 	id = indian_event.5
 	title = indian_event.5.t
 	desc = indian_event.5.d
+	picture = GFX_mrt_ssp_construction
 	is_triggered_only = yes
 	fire_only_once = yes
-	picture = GFX_mrt_ssp_construction
+
 	option = {
 		name = indian_event.5.a
 		log = "[GetDateText]: [This.GetName]: indian_event.5.a executed"
@@ -169,6 +179,7 @@ country_event = {
 			modifier = diplomatic_support
 		}
 	}
+
 	option = {
 		name = indian_event.5.b
 		log = "[GetDateText]: [This.GetName]: indian_event.5.b executed"
@@ -187,15 +198,17 @@ country_event = {
 		set_temp_variable = { influence_target = ROOT }
 		change_influence_percentage = yes
 	}
+
 }
 
 country_event = {
 	id = indian_event.6
 	title = indian_event.6.t
 	desc = indian_event.6.d
+	picture = GFX_NATO_picture
 	is_triggered_only = yes
 	fire_only_once = yes
-	picture = GFX_NATO_picture
+
 	option = {
 		name = indian_event.6.a
 		log = "[GetDateText]: [This.GetName]: indian_event.6.a executed"
@@ -215,6 +228,7 @@ country_event = {
 			modifier = drama
 		}
 	}
+
 	option = {
 		name = indian_event.6.b
 		log = "[GetDateText]: [This.GetName]: indian_event.6.b executed"
@@ -236,14 +250,16 @@ country_event = {
 		set_temp_variable = { influence_target = ROOT }
 		change_influence_percentage = yes
 	}
+
 }
 country_event = {
 	id = indian_event.667
 	title = indian_event.667.t
 	desc = indian_event.667.d
+	picture = GFX_NATO_picture
 	is_triggered_only = yes
 	fire_only_once = yes
-	picture = GFX_NATO_picture
+
 	option = {
 		name = indian_event.667.a
 		log = "[GetDateText]: [This.GetName]: indian_event.667.a executed"
@@ -264,14 +280,16 @@ country_event = {
 			}
 		}
 	}
+
 }
 country_event = {
 	id = indian_event.668
 	title = indian_event.668.t
 	desc = indian_event.668.d
+	picture = GFX_NATO_picture
 	is_triggered_only = yes
 	fire_only_once = yes
-	picture = GFX_NATO_picture
+
 	option = {
 		name = indian_event.668.a
 		log = "[GetDateText]: [This.GetName]: indian_event.668.a executed"
@@ -294,42 +312,44 @@ country_event = {
 			}
 		}
 	}
+
 }
 
 country_event = {
 	id = indian_event.7
 	title = indian_event.7.t
 	desc = indian_event.7.d
+	picture = GFX_RAJ_generic
 	is_triggered_only = yes
 	fire_only_once = yes
-	picture = GFX_RAJ_generic
+
 	option = {
 		name = indian_event.7.a
 		log = "[GetDateText]: [This.GetName]: indian_event.7.a executed"
 		ai_chance = { base = 1 }
 	}
+
 }
 
 country_event = {
 	id = indian_event.8
 	title = indian_event.8.t
 	desc = indian_event.8.d
+	picture = GFX_protest_generic_iran_country
 	is_triggered_only = yes
 	fire_only_once = yes
+
 	# TODO: Replace with Indian protest picture
-	picture = GFX_protest_generic_iran_country
 	option = {
 		name = indian_event.8.a
 		log = "[GetDateText]: [This.GetName]: indian_event.8.a executed"
 		add_popularity = { ideology = nationalist popularity = 0.05 }
 		add_popularity = { ideology = neutrality popularity = 0.05 }
 		recalculate_party = yes
-
 		set_temp_variable = { temp_change = 3 }
 		RAJ_change_muslim_opinion = yes
 		set_temp_variable = { temp_change = 5 }
 		RAJ_change_hindu_opinion = yes
-
 		ai_chance = {
 			base = 1
 			modifier = {
@@ -338,18 +358,17 @@ country_event = {
 			}
 		}
 	}
+
 	option = {
 		name = indian_event.8.b
 		log = "[GetDateText]: [This.GetName]: indian_event.8.b executed"
 		add_stability = -0.025
-
 		set_temp_variable = { temp_change = 6 }
 		RAJ_change_muslim_opinion = yes
 		set_temp_variable = { temp_change = 3 }
 		RAJ_change_hindu_opinion = yes
 		set_temp_variable = { temp_change = -1 }
 		RAJ_change_christian_opinion = yes
-
 		ai_chance = {
 			base = 1
 			modifier = {
@@ -358,15 +377,14 @@ country_event = {
 			}
 		}
 	}
+
 }
 
 news_event = {
 	id = RAJ_eastas.2
 	title = RAJ_eastas.2.t
 	desc = RAJ_eastas.2.d
-
 	picture = GFX_world_stockmarket
-
 	is_triggered_only = yes
 	major = yes
 
@@ -374,17 +392,18 @@ news_event = {
 		name = RAJ_eastas.2.o1
 		log = "[GetDateText]: [This.GetName]: RAJ_eastas.2.o1 executed"
 	}
+
 }
 
 country_event = {
 	id = indian_event.9
 	title = indian_event.9.t
 	desc = indian_event.9.d
+	picture = GFX_mannesmann_vodafone
 	is_triggered_only = yes
 	fire_only_once = yes
-	# TODO: Replace with Indian corporate/telecom picture
-	picture = GFX_mannesmann_vodafone
 
+	# TODO: Replace with Indian corporate/telecom picture
 	option = {
 		name = indian_event.9.a
 		log = "[GetDateText]: [This.GetName]: indian_event.10.a executed"
@@ -401,15 +420,14 @@ country_event = {
 				change_influence_percentage = yes
 			}
 		}
-
 		ai_chance = { base = 1 }
 	}
 
 	option = {
 		name = indian_event.10.a
-
 		ai_chance = { base = 1 }
 	}
+
 }
 
 country_event = {
@@ -417,6 +435,7 @@ country_event = {
 	title = indian_event.10.t
 	desc = indian_event.10.d
 	is_triggered_only = yes
+
 	option = {
 		name = indian_event.10.a
 		log = "[GetDateText]: [This.GetName]: indian_event.10.a executed"
@@ -425,6 +444,7 @@ country_event = {
 		modify_treasury_effect = yes
 		add_ideas = RAJ_BRICS_bank
 	}
+
 	option = {
 		name = indian_event.10.b
 		log = "[GetDateText]: [This.GetName]: indian_event.10.b executed"
@@ -433,14 +453,16 @@ country_event = {
 		set_temp_variable = { percent_change = 5 }
 		change_domestic_influence_percentage = yes
 	}
+
 }
 
 country_event = {
 	id = indian_event.11
 	title = indian_event.11.t
 	desc = indian_event.11.d
-	is_triggered_only = yes
 	picture = GFX_euro
+	is_triggered_only = yes
+
 	option = {
 		name = indian_event.11.a
 		log = "[GetDateText]: [This.GetName]: indian_event.11.a executed"
@@ -448,6 +470,7 @@ country_event = {
 		add_ideas = RAJ_BRICS_cur
 		one_random_network_infrastructure = yes
 	}
+
 	option = {
 		name = indian_event.11.b
 		log = "[GetDateText]: [This.GetName]: indian_event.11.b executed"
@@ -456,15 +479,14 @@ country_event = {
 		set_temp_variable = { percent_change = 5 }
 		change_domestic_influence_percentage = yes
 	}
+
 }
 
 news_event = {
 	id = RAJ_eastas.3
 	title = RAJ_eastas.3.t
 	desc = RAJ_eastas.3.d
-
 	picture = GFX_brics_news
-
 	is_triggered_only = yes
 	major = yes
 
@@ -472,15 +494,17 @@ news_event = {
 		name = RAJ_eastas.3.o1
 		log = "[GetDateText]: [This.GetName]: RAJ_eastas.3.o1 executed"
 	}
+
 }
 
 country_event = {
 	id = indian_event.12
 	title = indian_event.12.t
 	desc = indian_event.12.d
+	picture = GFX_pol_election_event
 	is_triggered_only = yes
 	fire_only_once = yes
-	picture = GFX_pol_election_event
+
 	option = {
 		name = indian_event.12.a
 		log = "[GetDateText]: [This.GetName]: indian_event.12.a executed"
@@ -488,21 +512,21 @@ country_event = {
 		add_ideas = RAJ_BRICS
 		news_event = RAJ_eastas.4
 	}
+
 	option = {
 		name = indian_event.12.b
 		log = "[GetDateText]: [This.GetName]: indian_event.12.b executed"
 		ai_chance = { base = 1 }
 		add_political_power = 100
 	}
+
 }
 
 news_event = {
 	id = RAJ_eastas.4
 	title = RAJ_eastas.4.t
 	desc = RAJ_eastas.4.d
-
 	picture = GFX_trade_agreement
-
 	is_triggered_only = yes
 	major = yes
 
@@ -510,15 +534,14 @@ news_event = {
 		name = RAJ_eastas.4.o1
 		log = "[GetDateText]: [This.GetName]: RAJ_eastas.4.o1 executed"
 	}
+
 }
 
 news_event = {
 	id = RAJ_eastas.5
 	title = RAJ_eastas.5.t
 	desc = RAJ_eastas.5.d
-
 	picture = GFX_trade_agreement
-
 	is_triggered_only = yes
 	major = yes
 
@@ -526,15 +549,17 @@ news_event = {
 		name = RAJ_eastas.5.o1
 		log = "[GetDateText]: [This.GetName]: RAJ_eastas.5.o1 executed"
 	}
+
 }
 
 country_event = {
 	id = indian_event.13
 	title = indian_event.13.t
 	desc = indian_event.13.d
+	picture = GFX_report_event_Corruption_2
 	is_triggered_only = yes
 	fire_only_once = yes
-	picture = GFX_report_event_Corruption_2
+
 	option = {
 		name = indian_event.13.a
 		log = "[GetDateText]: [This.GetName]: indian_event.13.a executed"
@@ -542,6 +567,7 @@ country_event = {
 		add_political_power = -150
 		decrease_corruption = yes
 	}
+
 	option = {
 		name = indian_event.13.b
 		log = "[GetDateText]: [This.GetName]: indian_event.13.b executed"
@@ -550,15 +576,17 @@ country_event = {
 		set_temp_variable = { temp_outlook_increase = -0.05 }
 		change_relative_party_popularity = yes
 	}
+
 }
 
 country_event = {
 	id = indian_event.14
 	title = indian_event.14.t
 	desc = indian_event.14.d
+	picture = GFX_sing_mil_matrch
 	is_triggered_only = yes
 	fire_only_once = yes
-	picture = GFX_sing_mil_matrch
+
 	option = {
 		name = indian_event.14.a
 		log = "[GetDateText]: [This.GetName]: indian_event.14.a executed"
@@ -566,30 +594,34 @@ country_event = {
 		add_political_power = 50
 		add_war_support = -0.05
 	}
+
 }
 
 country_event = {
 	id = indian_event.15
 	title = indian_event.15.t
 	desc = indian_event.15.d
+	picture = GFX_nuclear_test
 	is_triggered_only = yes
 	fire_only_once = yes
-	picture = GFX_nuclear_test
+
 	option = {
 		name = indian_event.15.a
 		log = "[GetDateText]: [This.GetName]: indian_event.15.a executed"
 		ai_chance = { base = 1 }
 		add_war_support = 0.05
 	}
+
 }
 
 country_event = {
 	id = indian_event.16
 	title = indian_event.16.t
 	desc = indian_event.16.d
+	picture = GFX_RAJ_generic
 	is_triggered_only = yes
 	fire_only_once = yes
-	picture = GFX_RAJ_generic
+
 	option = {
 		name = indian_event.16.a
 		log = "[GetDateText]: [This.GetName]: indian_event.16.a executed"
@@ -602,20 +634,23 @@ country_event = {
 			airforce_intel = 2
 		}
 	}
+
 }
 
 country_event = {
 	id = indian_event.17
 	title = indian_event.17.t
 	desc = indian_event.17.d
+	picture = GFX_indian_economy
 	is_triggered_only = yes
 	fire_only_once = yes
-	picture = GFX_indian_economy
+
 	option = {
 		name = indian_event.17.a
 		log = "[GetDateText]: [This.GetName]: indian_event.17.a executed"
 		ai_chance = { base = 1 }
 	}
+
 }
 
 # India Asks for Investments!
@@ -623,8 +658,9 @@ country_event = {
 	id = indian_event.18
 	title = indian_event.18.t
 	desc = indian_event.18.d
-	is_triggered_only = yes
 	picture = GFX_paris_convention
+	is_triggered_only = yes
+
 	option = {
 		name = indian_event.18.a
 		log = "[GetDateText]: [This.GetName]: indian_event.18.a executed"
@@ -632,12 +668,10 @@ country_event = {
 		modify_international_investment_effect = yes
 		set_temp_variable = { treasury_change = -7.5 }
 		modify_treasury_effect = yes
-
 		set_temp_variable = { percent_change = 5 }
 		set_temp_variable = { tag_index = THIS }
 		set_temp_variable = { influence_target = RAJ }
 		change_influence_percentage = yes
-
 		RAJ = {
 			random_owned_controlled_state = {
 				limit = { free_shared_building_slots = yes }
@@ -648,7 +682,6 @@ country_event = {
 					instant_build = yes
 				}
 			}
-
 			hidden_effect = {
 				country_event = {
 					id = indian_event.20
@@ -656,7 +689,6 @@ country_event = {
 				}
 			}
 		}
-
 		ai_chance = {
 			base = 0
 			modifier = {
@@ -679,53 +711,61 @@ country_event = {
 		}
 		ai_chance = { base = 0 }
 	}
+
 }
 
 country_event = {
 	id = indian_event.19
 	title = indian_event.19.t
 	desc = indian_event.19.d
-	is_triggered_only = yes
 	picture = GFX_paris_convention
+	is_triggered_only = yes
+
 	option = {
 		name = indian_event.19.a
 		log = "[GetDateText]: [This.GetName]: indian_event.19.a executed"
 	}
+
 }
 
 country_event = {
 	id = indian_event.20
 	title = indian_event.20.t
 	desc = indian_event.20.d
-	is_triggered_only = yes
 	picture = GFX_paris_convention
+	is_triggered_only = yes
+
 	option = {
 		name = indian_event.20.a
 		log = "[GetDateText]: [This.GetName]: indian_event.20.a executed"
 	}
+
 }
 
 country_event = {
 	id = indian_event.21
 	title = indian_event.21.t
 	desc = indian_event.21.d
+	picture = GFX_vaclav_square
 	is_triggered_only = yes
 	fire_only_once = yes
-	picture = GFX_vaclav_square
+
 	option = {
 		name = indian_event.21.a
 		log = "[GetDateText]: [This.GetName]: indian_event.21.a executed"
 		add_political_power = 100
 	}
+
 }
 
 country_event = {
 	id = indian_event.22
 	title = indian_event.22.t
 	desc = indian_event.22.d
+	picture = GFX_vaclav_square
 	is_triggered_only = yes
 	fire_only_once = yes
-	picture = GFX_vaclav_square
+
 	option = {
 		name = indian_event.22.a
 		log = "[GetDateText]: [This.GetName]: indian_event.22.a executed"
@@ -734,21 +774,24 @@ country_event = {
 				add_idea = Workers_Rights
 			}
 	}
+
 	option = {
 		name = indian_event.22.b
 		log = "[GetDateText]: [This.GetName]: indian_event.22.b executed"
 		add_political_power = 100
 		add_stability = -0.05
 	}
+
 }
 
 country_event = {
 	id = indian_event.23
 	title = indian_event.23.t
 	desc = indian_event.23.d
+	picture = GFX_USA_new_years
 	is_triggered_only = yes
 	fire_only_once = yes
-	picture = GFX_USA_new_years
+
 	option = {
 		name = indian_event.23.a
 		log = "[GetDateText]: [This.GetName]: indian_event.23.a executed"
@@ -758,15 +801,17 @@ country_event = {
 			change_influence_percentage = yes
 		}
 	}
+
 }
 
 country_event = {
 	id = indian_event.24
 	title = indian_event.24.t
 	desc = indian_event.24.d
+	picture = GFX_cargo_ship
 	is_triggered_only = yes
 	fire_only_once = yes
-	picture = GFX_cargo_ship
+
 	option = {
 		name = indian_event.24.a
 		log = "[GetDateText]: [This.GetName]: indian_event.24.a executed"
@@ -779,15 +824,17 @@ country_event = {
 			airforce_intel = 1
 		}
 	}
+
 }
 
 country_event = {
 	id = indian_event.25
 	title = indian_event.25.t
 	desc = indian_event.25.d
+	picture = GFX_arsenal_weapon
 	is_triggered_only = yes
 	fire_only_once = yes
-	picture = GFX_arsenal_weapon
+
 	option = {
 		name = indian_event.25.a
 		log = "[GetDateText]: [This.GetName]: indian_event.25.a executed"
@@ -796,6 +843,7 @@ country_event = {
 		add_stability = 0.05
 		add_political_power = -100
 	}
+
 	option = {
 		name = indian_event.25.b
 		log = "[GetDateText]: [This.GetName]: indian_event.25.b executed"
@@ -805,21 +853,24 @@ country_event = {
 		}
 		increase_corruption = yes
 	}
+
 }
 
 country_event = {
 	id = indian_event.26
 	title = indian_event.26.t
 	desc = indian_event.26.d
+	picture = GFX_SAF_generic
 	is_triggered_only = yes
 	fire_only_once = yes
+
 	# TODO: Replace with Indian diplomatic picture
-	picture = GFX_SAF_generic
 	option = {
 		name = indian_event.26.a
 		log = "[GetDateText]: [This.GetName]: indian_event.26.a executed"
 		add_political_power = 100
 	}
+
 }
 
 country_event = {
@@ -850,6 +901,7 @@ country_event = {
 			factor = 50
 		}
 	}
+
 	option = {
 		name = indian_event.27.o2
 		log = "[GetDateText]: [This.GetName]: indian_event.27.o2 executed"
@@ -864,48 +916,55 @@ country_event = {
 			factor = 20
 		}
 	}
+
 }
 
 country_event = {
 	id = indian_event.28
 	title = indian_event.28.t
 	desc = indian_event.28.d
+	picture = GFX_Dresdener_bank
 	is_triggered_only = yes
 	fire_only_once = yes
-	picture = GFX_Dresdener_bank
+
 	option = {
 		name = indian_event.28.a
 		log = "[GetDateText]: [This.GetName]: indian_event.28.a executed"
 		set_temp_variable = { percent_change = 5 }
 		change_domestic_influence_percentage = yes
 	}
+
 }
 
 country_event = {
 	id = indian_event.29
 	title = indian_event.29.t
 	desc = indian_event.29.d
+	picture = GFX_fracking
 	is_triggered_only = yes
 	fire_only_once = yes
-	picture = GFX_fracking
+
 	option = {
 		name = indian_event.29.a
 		log = "[GetDateText]: [This.GetName]: indian_event.29.a executed"
 		set_country_flag = RAJ_gasallindia
 	}
+
 	option = {
 		name = indian_event.29.b
 		log = "[GetDateText]: [This.GetName]: indian_event.29.b executed"
 		set_country_flag = RAJ_gasoneindia
 	}
+
 }
 
 country_event = {
 	id = indian_event.30
 	title = indian_event.30.t
 	desc = indian_event.30.d
-	is_triggered_only = yes
 	picture = GFX_fracking
+	is_triggered_only = yes
+
 	option = {
 		name = indian_event.30.a
 		log = "[GetDateText]: [This.GetName]: indian_event.30.a executed"
@@ -920,6 +979,7 @@ country_event = {
 			factor = 20
 		}
 	}
+
 	option = {
 		name = indian_event.30.b
 		log = "[GetDateText]: [This.GetName]: indian_event.30.b executed"
@@ -936,31 +996,34 @@ country_event = {
 			factor = 10
 		}
 	}
+
 }
 
 country_event = {
 	id = indian_event.31
 	title = indian_event.31.t
 	desc = indian_event.31.d
+	picture = GFX_CHI_south_sea_victory
 	is_triggered_only = yes
 	fire_only_once = yes
-	picture = GFX_CHI_south_sea_victory
+
 	option = {
 		name = indian_event.31.a
 		log = "[GetDateText]: [This.GetName]: indian_event.31.a executed"
 	}
+
 }
 
 country_event = {
 	id = indian_event.32
 	title = indian_event.32.t
 	desc = indian_event.32.d
+	picture = GFX_CHI_south_sea_victory
 	is_triggered_only = yes
 	fire_only_once = yes
-	picture = GFX_CHI_south_sea_victory
-	trigger = {
-		is_in_faction = no
-	}
+
+	trigger = { is_in_faction = no }
+
 	option = {
 		name = indian_event.32.a
 		log = "[GetDateText]: [This.GetName]: indian_event.32.a executed"
@@ -983,6 +1046,7 @@ country_event = {
 			factor = 20
 		}
 	}
+
 	option = {
 		name = indian_event.32.b
 		log = "[GetDateText]: [This.GetName]: indian_event.32.b executed"
@@ -990,15 +1054,17 @@ country_event = {
 			factor = 19
 		}
 	}
+
 }
 
 country_event = {
 	id = indian_event.33
 	title = indian_event.33.t
 	desc = indian_event.33.d
+	picture = GFX_fracking
 	is_triggered_only = yes
 	fire_only_once = yes
-	picture = GFX_fracking
+
 	option = {
 		name = indian_event.33.a
 		log = "[GetDateText]: [This.GetName]: indian_event.33.a executed"
@@ -1016,6 +1082,7 @@ country_event = {
 			}
 		}
 	}
+
 	option = {
 		name = indian_event.33.b
 		log = "[GetDateText]: [This.GetName]: indian_event.33.b executed"
@@ -1034,15 +1101,17 @@ country_event = {
 			factor = 50
 		}
 	}
+
 }
 
 country_event = {
 	id = indian_event.34
 	title = indian_event.34.t
 	desc = indian_event.34.d
+	picture = GFX_CHI_end_of_roc
 	is_triggered_only = yes
 	fire_only_once = yes
-	picture = GFX_CHI_end_of_roc
+
 	option = {
 		name = indian_event.34.a
 		log = "[GetDateText]: [This.GetName]: indian_event.34.a executed"
@@ -1059,6 +1128,7 @@ country_event = {
 			factor = 20
 		}
 	}
+
 	option = {
 		name = indian_event.34.b
 		log = "[GetDateText]: [This.GetName]: indian_event.34.b executed"
@@ -1076,6 +1146,7 @@ country_event = {
 			factor = 10
 		}
 	}
+
 }
 #
 country_event = {
@@ -1092,7 +1163,6 @@ country_event = {
 		RAJ_change_opinion_by_side_a = yes
 		set_temp_variable = { temp_change = -1 }
 		RAJ_change_opinion_by_side_b = yes
-
 		ai_chance = {
 			factor = 10
 			modifier = {
@@ -1101,6 +1171,7 @@ country_event = {
 			}
 		}
 	}
+
 	option = {
 		name = "[GetReligionConflictOptionB]"
 		log = "[GetDateText]: [This.GetName]: RAJ_religion.1.b executed"
@@ -1108,7 +1179,6 @@ country_event = {
 		RAJ_change_opinion_by_side_a = yes
 		set_temp_variable = { temp_change = 2 }
 		RAJ_change_opinion_by_side_b = yes
-
 		ai_chance = {
 			factor = 10
 			modifier = {
@@ -1117,17 +1187,16 @@ country_event = {
 			}
 		}
 	}
+
 	option = {
 		name = RAJ_religion_conflict_resolve
 		log = "[GetDateText]: [This.GetName]: RAJ_religion.1.c executed"
 		set_temp_variable = { treasury_change = -15 }
 		modify_treasury_effect = yes
 		add_political_power = -150
-
 		set_temp_variable = { temp_change = 1 }
 		RAJ_change_opinion_by_side_a = yes
 		RAJ_change_opinion_by_side_b = yes
-
 		ai_chance = {
 			factor = 10
 			modifier = {
@@ -1136,6 +1205,7 @@ country_event = {
 			}
 		}
 	}
+
 }
 #
 country_event = {
@@ -1154,7 +1224,6 @@ country_event = {
 		set_temp_variable = { temp_change = -1 }
 		RAJ_change_hindu_opinion = yes
 		RAJ_change_muslim_opinion = yes
-
 		ai_chance = {
 			factor = 10
 			modifier = {
@@ -1164,7 +1233,7 @@ country_event = {
 			}
 		}
 	}
-	#Back the Hindus
+
 	option = {
 		name = RAJ_religion.4.b
 		log = "[GetDateText]: [This.GetName]: RAJ_religion.4.b executed"
@@ -1182,7 +1251,7 @@ country_event = {
 			}
 		}
 	}
-	#Back the Muslims
+
 	option = {
 		name = RAJ_religion.4.c
 		log = "[GetDateText]: [This.GetName]: RAJ_religion.4.c executed"
@@ -1191,7 +1260,6 @@ country_event = {
 		set_temp_variable = { temp_change = -1 }
 		RAJ_change_christian_opinion = yes
 		RAJ_change_hindu_opinion = yes
-
 		ai_chance = {
 			factor = 10
 			modifier = {
@@ -1201,6 +1269,10 @@ country_event = {
 			}
 		}
 	}
+
+	#Back the Hindus
+	#Back the Muslims
+
 }
 #
 
@@ -1209,9 +1281,10 @@ country_event = {
 	id = indian_event.35
 	title = indian_event.35.t
 	desc = indian_event.35.d
+	picture = GFX_china_indian_border_skirmish
 	is_triggered_only = yes
 	fire_only_once = yes
-	picture = GFX_china_indian_border_skirmish
+
 	option = {
 		name = indian_event.35.a
 		log = "[GetDateText]: [This.GetName]: indian_event.35.a executed"
@@ -1228,6 +1301,7 @@ country_event = {
 			factor = 20
 		}
 	}
+
 	option = {
 		name = indian_event.35.b
 		log = "[GetDateText]: [This.GetName]: indian_event.35.b executed"
@@ -1245,15 +1319,17 @@ country_event = {
 			factor = 10
 		}
 	}
+
 }
 
 country_event = {
 	id = indian_event.36
 	title = indian_event.36.t
 	desc = indian_event.36.d
+	picture = GFX_indian_pakistan_unite
 	is_triggered_only = yes
 	fire_only_once = yes
-	picture = GFX_indian_pakistan_unite
+
 	option = {
 		name = indian_event.36.a
 		log = "[GetDateText]: [This.GetName]: indian_event.36.a executed"
@@ -1267,6 +1343,7 @@ country_event = {
 			factor = 80
 		}
 	}
+
 	option = {
 		name = indian_event.36.b
 		log = "[GetDateText]: [This.GetName]: indian_event.36.b executed"
@@ -1285,18 +1362,21 @@ country_event = {
 			factor = 20
 		}
 	}
+
 }
 
 country_event = {
 	id = indian_event.37
 	title = indian_event.37.t
 	desc = indian_event.37.d
-	is_triggered_only = yes
 	picture = GFX_china_indian_border_skirmish
+	is_triggered_only = yes
+
 	trigger = {
 		NOT = { has_war_with = FROM }
 		is_in_faction = no
 	}
+
 	option = {
 		name = indian_event.37.a
 		log = "[GetDateText]: [This.GetName]: indian_event.37.a executed"
@@ -1305,6 +1385,7 @@ country_event = {
 			factor = 20
 		}
 	}
+
 	option = {
 		name = indian_event.37.b
 		log = "[GetDateText]: [This.GetName]: indian_event.37.b executed"
@@ -1317,15 +1398,17 @@ country_event = {
 			factor = 10
 		}
 	}
+
 }
 
 country_event = {
 	id = indian_event.38
 	title = indian_event.38.t
 	desc = indian_event.38.d
+	picture = GFX_china_indian_border_skirmish
 	is_triggered_only = yes
 	fire_only_once = yes
-	picture = GFX_china_indian_border_skirmish
+
 	option = {
 		name = indian_event.38.a
 		log = "[GetDateText]: [This.GetName]: indian_event.38.a executed"
@@ -1335,15 +1418,17 @@ country_event = {
 			factor = 20
 		}
 	}
+
 }
 
 country_event = {
 	id = indian_event.39
 	title = indian_event.39.t
 	desc = indian_event.39.d
+	picture = GFX_mumbai_attack_terror
 	is_triggered_only = yes
 	fire_only_once = yes
-	picture = GFX_mumbai_attack_terror
+
 	option = {
 		name = indian_event.39.a
 		log = "[GetDateText]: [This.GetName]: indian_event.39.a executed"
@@ -1355,6 +1440,7 @@ country_event = {
 			factor = 20
 		}
 	}
+
 	option = {
 		name = indian_event.39.b
 		log = "[GetDateText]: [This.GetName]: indian_event.39.b executed"
@@ -1367,14 +1453,16 @@ country_event = {
 			factor = 10
 		}
 	}
+
 }
 country_event = {
 	id = indian_event.40
 	title = indian_event.40.t
 	desc = indian_event.40.d
+	picture = GFX_china_indian_border_skirmish
 	is_triggered_only = yes
 	fire_only_once = yes
-	picture = GFX_china_indian_border_skirmish
+
 	option = {
 		name = indian_event.40.a
 		log = "[GetDateText]: [This.GetName]: indian_event.40.a executed"
@@ -1393,15 +1481,17 @@ country_event = {
 			factor = 20
 		}
 	}
+
 }
 
 country_event = {
 	id = RAJ_mao_reb.1
 	title = RAJ_mao_reb.1.t
 	desc = RAJ_mao_reb.1.d
-	is_triggered_only = yes
-	# TODO: Replace with Indian military operation picture
 	picture = GFX_CAN_operation_medusa_commences
+	is_triggered_only = yes
+
+	# TODO: Replace with Indian military operation picture
 	option = {
 		name = RAJ_mao_reb.1.a
 		log = "[GetDateText]: [This.GetName]: RAJ_mao_reb.1.a executed"
@@ -1422,15 +1512,17 @@ country_event = {
 			base = 80
 		}
 	}
+
 }
 
 country_event = {
 	id = RAJ_mao_reb.2
 	title = RAJ_mao_reb.2.t
 	desc = RAJ_mao_reb.2.d
-	is_triggered_only = yes
-	# TODO: Replace with Indian military operation picture
 	picture = GFX_CAN_operation_medusa_commences
+	is_triggered_only = yes
+
+	# TODO: Replace with Indian military operation picture
 	option = {
 		name = RAJ_mao_reb.2.a
 		log = "[GetDateText]: [This.GetName]: RAJ_mao_reb.2.a executed"
@@ -1451,15 +1543,17 @@ country_event = {
 			base = 80
 		}
 	}
+
 }
 
 country_event = {
 	id = RAJ_mao_reb.3
 	title = RAJ_mao_reb.3.t
 	desc = RAJ_mao_reb.3.d
-	is_triggered_only = yes
-	# TODO: Replace with Indian military operation picture
 	picture = GFX_CAN_operation_medusa_commences
+	is_triggered_only = yes
+
+	# TODO: Replace with Indian military operation picture
 	option = {
 		name = RAJ_mao_reb.3.a
 		log = "[GetDateText]: [This.GetName]: RAJ_mao_reb.3.a executed"
@@ -1480,6 +1574,7 @@ country_event = {
 			base = 80
 		}
 	}
+
 }
 
 country_event = {
@@ -1487,8 +1582,8 @@ country_event = {
 	title = raj_exports.1.t
 	desc = raj_exports.1.d
 	picture = GFX_weapons_arms1
-
 	is_triggered_only = yes
+
 	#PWO
 	option = {
 		name = raj_exports.1.a
@@ -1511,7 +1606,6 @@ country_event = {
 		modify_treasury_effect = yes
 	}
 
-	#AWTOMATS
 	option = {
 		name = raj_exports.1.c
 		log = "[GetDateText]: [This.GetName]: raj_exports.1.c executed"
@@ -1533,7 +1627,6 @@ country_event = {
 		}
 	}
 
-	#PTRK
 	option = {
 		name = raj_exports.1.g
 		log = "[GetDateText]: [This.GetName]: raj_exports.1.g executed"
@@ -1559,14 +1652,19 @@ country_event = {
 		name = raj_exports.1.e
 		log = "[GetDateText]: [This.GetName]: raj_exports.1.e executed"
 	}
+
+	#AWTOMATS
+	#PTRK
+
 }
 
 country_event = {
 	id = RAJ_mao_reb.4
 	title = RAJ_mao_reb.4.t
 	desc = RAJ_mao_reb.4.d
-	is_triggered_only = yes
 	picture = GFX_student_protest_iran
+	is_triggered_only = yes
+
 	option = {
 		name = RAJ_mao_reb.4.a
 		log = "[GetDateText]: [This.GetName]: RAJ_mao_reb.4.a executed"
@@ -1579,16 +1677,17 @@ country_event = {
 			base = 80
 		}
 	}
+
 }
 
 country_event = {
 	id = RAJ_mao_reb.5
 	title = RAJ_mao_reb.5.t
 	desc = RAJ_mao_reb.5.d
-	is_triggered_only = yes
-	# TODO: Replace with Indian civil conflict picture
 	picture = GFX_iranian_civ_war_country
+	is_triggered_only = yes
 
+	# TODO: Replace with Indian civil conflict picture
 	option = {
 		name = RAJ_mao_reb.5.a
 		log = "[GetDateText]: [This.GetName]: RAJ_mao_reb.5.a executed"
@@ -1688,6 +1787,7 @@ country_event = {
 			base = 80
 		}
 	}
+
 }
 
 # --------------------------------------------
@@ -1702,6 +1802,7 @@ country_event = {
 	picture = GFX_SOV_generic
 	is_triggered_only = yes
 	fire_only_once = yes
+
 	trigger = {
 		original_tag = RAJ
 		RAJ_country_has_any_naxalite_states = yes
@@ -1729,6 +1830,7 @@ country_event = {
 		}
 		ai_chance = { base = 1 }
 	}
+
 }
 
 # Major Maoist Attack
@@ -1738,6 +1840,7 @@ country_event = {
 	desc = RAJ_naxal.11.d
 	picture = GFX_politics_protest
 	is_triggered_only = yes
+
 	trigger = {
 		original_tag = RAJ
 		RAJ_country_has_any_naxalite_states = yes
@@ -1753,6 +1856,7 @@ country_event = {
 		add_manpower = -500
 		ai_chance = { base = 1 }
 	}
+
 }
 
 # Mass Surrender Event
@@ -1761,7 +1865,6 @@ country_event = {
 	title = RAJ_naxal.12.t
 	desc = RAJ_naxal.12.d
 	picture = GFX_weapons_arms1
-
 	is_triggered_only = yes
 
 	option = {
@@ -1771,6 +1874,7 @@ country_event = {
 		add_political_power = 25
 		ai_chance = { base = 1 }
 	}
+
 }
 
 # Leadership Elimination
@@ -1780,6 +1884,7 @@ country_event = {
 	desc = RAJ_naxal.13.d
 	picture = GFX_Military_Reform
 	is_triggered_only = yes
+
 	trigger = {
 		original_tag = RAJ
 		NOT = { has_country_flag = RAJ_leadership_elimination_cooldown }
@@ -1794,6 +1899,7 @@ country_event = {
 		add_war_support = 0.02
 		ai_chance = { base = 1 }
 	}
+
 }
 
 # Tribal Displacement Protests
@@ -1803,6 +1909,7 @@ country_event = {
 	desc = RAJ_naxal.14.d
 	picture = GFX_politics_protest
 	is_triggered_only = yes
+
 	trigger = {
 		original_tag = RAJ
 		RAJ_country_has_any_naxalite_states = yes
@@ -1832,6 +1939,7 @@ country_event = {
 		add_stability = 0.01
 		ai_chance = { base = 70 }
 	}
+
 }
 
 # Operation Green Hunt Success
@@ -1840,7 +1948,6 @@ country_event = {
 	title = RAJ_naxal.15.t
 	desc = RAJ_naxal.15.d
 	picture = GFX_Military_Reform
-
 	is_triggered_only = yes
 
 	option = {
@@ -1850,6 +1957,7 @@ country_event = {
 		add_war_support = 0.02
 		ai_chance = { base = 1 }
 	}
+
 }
 
 # Naxal-Free Milestone
@@ -1861,9 +1969,7 @@ country_event = {
 	is_triggered_only = yes
 	fire_only_once = yes
 
-	trigger = {
-		original_tag = RAJ
-	}
+	trigger = { original_tag = RAJ }
 
 	option = {
 		name = RAJ_naxal.16.a
@@ -1877,6 +1983,7 @@ country_event = {
 		if = { limit = { is_ai = no } add_to_variable = { RAJ_mao_gui_dirty = 1 } }
 		ai_chance = { base = 1 }
 	}
+
 }
 
 # Dantewada Ambush - April 6, 2010 - 76 CRPF personnel killed
@@ -1897,6 +2004,7 @@ country_event = {
 		456 = { if = { limit = { is_owned_by = RAJ } RAJ_upgrade_naxalite_level = yes } }
 		ai_chance = { base = 1 }
 	}
+
 }
 
 # Sukma Attack - April 24, 2017 - 25 CRPF personnel killed
@@ -1929,15 +2037,17 @@ country_event = {
 		add_manpower = -25
 		ai_chance = { base = 1 }
 	}
+
 }
 
 country_event = {
 	id = indian_event.41
 	title = indian_event.41.t
 	desc = indian_event.41.d
+	picture = GFX_tatatea_fact
 	is_triggered_only = yes
 	fire_only_once = yes
-	picture = GFX_tatatea_fact
+
 	option = {
 		name = indian_event.41.a
 		log = "[GetDateText]: [This.GetName]: indian_event.41.a executed"
@@ -1945,15 +2055,17 @@ country_event = {
 		change_oligarchs_opinion = yes
 		ai_chance = { base = 1 }
 	}
+
 }
 
 country_event = {
 	id = indian_event.42
 	title = indian_event.42.t
 	desc = indian_event.42.d
+	picture = GFX_clinton_visit_india
 	is_triggered_only = yes
 	fire_only_once = yes
-	picture = GFX_clinton_visit_india
+
 	option = {
 		name = indian_event.42.a
 		log = "[GetDateText]: [This.GetName]: indian_event.42.a executed"
@@ -1967,15 +2079,17 @@ country_event = {
 		}
 		ai_chance = { base = 1 }
 	}
+
 }
 
 country_event = {
 	id = indian_event.43
 	title = indian_event.43.t
 	desc = indian_event.43.d
+	picture = GFX_match_fixing
 	is_triggered_only = yes
 	fire_only_once = yes
-	picture = GFX_match_fixing
+
 	option = {
 		name = indian_event.43.a
 		log = "[GetDateText]: [This.GetName]: indian_event.43.a executed"
@@ -1983,15 +2097,17 @@ country_event = {
 		add_stability = 0.05
 		ai_chance = { base = 1 }
 	}
+
 }
 
 country_event = {
 	id = indian_event.44
 	title = indian_event.44.t
 	desc = indian_event.44.d
+	picture = GFX_billion_pop_raj
 	is_triggered_only = yes
 	fire_only_once = yes
-	picture = GFX_billion_pop_raj
+
 	option = {
 		name = indian_event.44.a
 		log = "[GetDateText]: [This.GetName]: indian_event.44.a executed"
@@ -1999,15 +2115,17 @@ country_event = {
 		add_stability = -0.05
 		ai_chance = { base = 1 }
 	}
+
 }
 
 country_event = {
 	id = indian_event.45
 	title = indian_event.45.t
 	desc = indian_event.45.d
+	picture = GFX_lakhar_attack_parl
 	is_triggered_only = yes
 	fire_only_once = yes
-	picture = GFX_lakhar_attack_parl
+
 	option = {
 		name = indian_event.45.a
 		log = "[GetDateText]: [This.GetName]: indian_event.45.a executed"
@@ -2022,29 +2140,33 @@ country_event = {
 		}
 		ai_chance = { base = 1 }
 	}
+
 }
 
 country_event = {
 	id = indian_event.46
 	title = indian_event.46.t
 	desc = indian_event.46.d
+	picture = GFX_delhi_metro
 	is_triggered_only = yes
 	fire_only_once = yes
-	picture = GFX_delhi_metro
+
 	option = {
 		name = indian_event.46.a
 		log = "[GetDateText]: [This.GetName]: indian_event.46.a executed"
 		ai_chance = { base = 1 }
 	}
+
 }
 
 country_event = {
 	id = indian_event.47
 	title = indian_event.47.t
 	desc = indian_event.47.d
+	picture = GFX_mumbai_attack_terror
 	is_triggered_only = yes
 	fire_only_once = yes
-	picture = GFX_mumbai_attack_terror
+
 	option = {
 		name = indian_event.47.a
 		log = "[GetDateText]: [This.GetName]: indian_event.47.a executed"
@@ -2059,16 +2181,18 @@ country_event = {
 		}
 		ai_chance = { base = 1 }
 	}
+
 }
 
 country_event = {
 	id = indian_event.48
 	title = indian_event.48.t
 	desc = indian_event.48.d
+	picture = GFX_BRA_event_banco_fortaleza
 	is_triggered_only = yes
 	fire_only_once = yes
+
 	# TODO: Replace with Indian economic picture
-	picture = GFX_BRA_event_banco_fortaleza
 	option = {
 		name = indian_event.48.a
 		log = "[GetDateText]: [This.GetName]: indian_event.48.a executed"
@@ -2077,16 +2201,18 @@ country_event = {
 		add_political_power = 100
 		add_stability = 0.05
 	}
+
 }
 
 country_event = {
 	id = indian_event.49
 	title = indian_event.49.t
 	desc = indian_event.49.d
+	picture = GFX_HOU_SPC
 	is_triggered_only = yes
 	fire_only_once = yes
+
 	# TODO: Replace with Indian space program (ISRO) picture
-	picture = GFX_HOU_SPC
 	option = {
 		name = indian_event.49.a
 		log = "[GetDateText]: [This.GetName]: indian_event.49.a executed"
@@ -2097,6 +2223,7 @@ country_event = {
 				remove_ideas = RAJ_pro_lgbtqa_stance_idea
 			}
 	}
+
 	option = {
 		name = indian_event.49.b
 		log = "[GetDateText]: [This.GetName]: indian_event.49.b executed"
@@ -2107,15 +2234,17 @@ country_event = {
 				remove_ideas = RAJ_anti_lgbtqa_stance_idea
 			}
 	}
+
 }
 
 country_event = {
 	id = indian_event.50
 	title = indian_event.50.t
 	desc = indian_event.50.d
+	picture = GFX_indian_soldiers2
 	is_triggered_only = yes
 	fire_only_once = yes
-	picture = GFX_indian_soldiers2
+
 	option = {
 		name = indian_event.50.a
 		log = "[GetDateText]: [This.GetName]: indian_event.50.a executed"
@@ -2130,15 +2259,17 @@ country_event = {
 		}
 		ai_chance = { base = 1 }
 	}
+
 }
 
 country_event = {
 	id = indian_event.51
 	title = indian_event.51.t
 	desc = indian_event.51.d
+	picture = GFX_moonbase
 	is_triggered_only = yes
 	fire_only_once = yes
-	picture = GFX_moonbase
+
 	option = {
 		name = indian_event.51.a
 		log = "[GetDateText]: [This.GetName]: indian_event.51.a executed"
@@ -2149,16 +2280,18 @@ country_event = {
 		change_relative_party_popularity = yes
 		ai_chance = { base = 1 }
 	}
+
 }
 
 country_event = {
 	id = indian_event.52
 	title = indian_event.52.t
 	desc = indian_event.52.d
+	picture = GFX_SYR_tahrir_al_sham
 	is_triggered_only = yes
 	fire_only_once = yes
+
 	# TODO: Replace with Indian security/counter-terrorism picture
-	picture = GFX_SYR_tahrir_al_sham
 	option = {
 		name = indian_event.52.a
 		log = "[GetDateText]: [This.GetName]: indian_event.52.a executed"
@@ -2168,14 +2301,16 @@ country_event = {
 			popularity = -0.05
 		}
 	}
+
 }
 country_event = {
 	id = indian_event.53
 	title = indian_event.53.t
 	desc = indian_event.53.d
+	picture = GFX_lakhar_attack_exec
 	is_triggered_only = yes
 	fire_only_once = yes
-	picture = GFX_lakhar_attack_exec
+
 	option = {
 		name = indian_event.53.a
 		log = "[GetDateText]: [This.GetName]: indian_event.53.a executed"
@@ -2186,6 +2321,7 @@ country_event = {
 		}
 		set_country_flag = TRK_accepted_this
 	}
+
 	option = {
 		name = indian_event.53.b
 		log = "[GetDateText]: [This.GetName]: indian_event.53.b executed"
@@ -2194,32 +2330,37 @@ country_event = {
 			country_event = indian_event.58
 		}
 	}
+
 }
 country_event = {
 	id = indian_event.54
 	title = indian_event.54.t
 	desc = indian_event.54.d
+	picture = GFX_indian_soldiers1
 	is_triggered_only = yes
 	fire_only_once = yes
-	picture = GFX_indian_soldiers1
+
 	option = {
 		name = indian_event.54.a
 		log = "[GetDateText]: [This.GetName]: indian_event.54.a executed"
 		TRK = { RAJ_afghan_wargoals = yes }
 		RAJ = { RAJ_afghan_wargoals = yes }
 	}
+
 	option = {
 		name = indian_event.54.b
 		log = "[GetDateText]: [This.GetName]: indian_event.54.b executed"
 		RAJ = { RAJ_afghan_wargoals = yes }
 	}
+
 }
 country_event = {
 	id = indian_event.55
 	title = indian_event.55.t
 	desc = indian_event.55.d
-	is_triggered_only = yes
 	picture = GFX_nep_election
+	is_triggered_only = yes
+
 	option = {
 		name = indian_event.55.a
 		log = "[GetDateText]: [This.GetName]: indian_event.55.a executed"
@@ -2237,6 +2378,7 @@ country_event = {
 			}
 		}
 	}
+
 	option = {
 		name = indian_event.55.b
 		log = "[GetDateText]: [This.GetName]: indian_event.55.b executed"
@@ -2249,6 +2391,7 @@ country_event = {
 			}
 		}
 	}
+
 }
 
 # BRICS Expansion Events
@@ -2256,9 +2399,10 @@ country_event = {
 	id = indian_event.56
 	title = indian_event.56.t
 	desc = indian_event.56.d
+	picture = GFX_NATO_picture
 	is_triggered_only = yes
 	fire_only_once = yes
-	picture = GFX_NATO_picture
+
 	option = {
 		name = indian_event.56.a
 		log = "[GetDateText]: [This.GetName]: indian_event.56.a executed"
@@ -2270,20 +2414,23 @@ country_event = {
 			}
 		}
 	}
+
 	option = {
 		name = indian_event.56.b
 		log = "[GetDateText]: [This.GetName]: indian_event.56.b executed"
 		ai_chance = { base = 1 }
 	}
+
 }
 
 country_event = {
 	id = indian_event.57
 	title = indian_event.57.t
 	desc = indian_event.57.d
+	picture = GFX_indian_soldiers2
 	is_triggered_only = yes
 	fire_only_once = yes
-	picture = GFX_indian_soldiers2
+
 	option = {
 		name = indian_event.57.a
 		log = "[GetDateText]: [This.GetName]: indian_event.57.a executed"
@@ -2304,6 +2451,7 @@ country_event = {
 			}
 		}
 	}
+
 	option = {
 		name = indian_event.57.b
 		log = "[GetDateText]: [This.GetName]: indian_event.57.b executed"
@@ -2313,15 +2461,17 @@ country_event = {
 		set_temp_variable = { percent_change = 2 }
 		change_domestic_influence_percentage = yes
 	}
+
 }
 
 country_event = {
 	id = indian_event.58
 	title = indian_event.58.t
 	desc = indian_event.58.d
+	picture = GFX_indian_soldiers2
 	is_triggered_only = yes
 	fire_only_once = yes
-	picture = GFX_indian_soldiers2
+
 	option = {
 		name = indian_event.58.a
 		log = "[GetDateText]: [This.GetName]: indian_event.58.a executed"
@@ -2333,14 +2483,16 @@ country_event = {
 			}
 		}
 	}
+
 }
 
 country_event = {
 	id = indian_event.59
 	title = indian_event.59.t
 	desc = indian_event.59.d
-	is_triggered_only = yes
 	picture = GFX_RAJ_generic
+	is_triggered_only = yes
+
 	option = {
 		name = indian_event.59.a
 		log = "[GetDateText]: [This.GetName]: indian_event.59.a executed"
@@ -2348,14 +2500,16 @@ country_event = {
 			base = 1
 		}
 	}
+
 }
 
 country_event = {
 	id = indian_event.60
 	title = indian_event.60.t
 	desc = indian_event.60.d
-	is_triggered_only = yes
 	picture = GFX_RAJ_generic
+	is_triggered_only = yes
+
 	option = {
 		name = indian_event.60.a
 		log = "[GetDateText]: [This.GetName]: indian_event.60.a executed"
@@ -2363,6 +2517,7 @@ country_event = {
 			base = 1
 		}
 	}
+
 }
 
 # 2006 Mumbai Train Bombings - July 11, 2006 - 209 killed
@@ -2370,9 +2525,10 @@ country_event = {
 	id = indian_event.61
 	title = indian_event.61.t
 	desc = indian_event.61.d
+	picture = GFX_mumbai_attack_terror
 	is_triggered_only = yes
 	fire_only_once = yes
-	picture = GFX_mumbai_attack_terror
+
 	option = {
 		name = indian_event.61.a
 		log = "[GetDateText]: [This.GetName]: indian_event.61.a executed"
@@ -2387,6 +2543,7 @@ country_event = {
 		}
 		ai_chance = { base = 1 }
 	}
+
 }
 
 # 2013 Darbha Attack - May 25, 2013 - 27 killed in Naxalite ambush
@@ -2394,9 +2551,10 @@ country_event = {
 	id = RAJ_naxal.19
 	title = RAJ_naxal.19.t
 	desc = RAJ_naxal.19.d
+	picture = GFX_RAJ_generic
 	is_triggered_only = yes
 	fire_only_once = yes
-	picture = GFX_RAJ_generic
+
 	option = {
 		name = RAJ_naxal.19.a
 		log = "[GetDateText]: [This.GetName]: RAJ_naxal.19.a executed"
@@ -2406,6 +2564,7 @@ country_event = {
 		456 = { if = { limit = { is_owned_by = RAJ } RAJ_upgrade_naxalite_level = yes } }
 		ai_chance = { base = 1 }
 	}
+
 }
 
 # 2016 Uri Attack - September 18, 2016 - 19 soldiers killed
@@ -2413,9 +2572,10 @@ country_event = {
 	id = indian_event.62
 	title = indian_event.62.t
 	desc = indian_event.62.d
+	picture = GFX_indian_soldiers2
 	is_triggered_only = yes
 	fire_only_once = yes
-	picture = GFX_indian_soldiers2
+
 	option = {
 		name = indian_event.62.a
 		log = "[GetDateText]: [This.GetName]: indian_event.62.a executed"
@@ -2430,6 +2590,7 @@ country_event = {
 		}
 		ai_chance = { base = 1 }
 	}
+
 }
 
 # 2016 Demonetization - November 8, 2016
@@ -2437,9 +2598,10 @@ country_event = {
 	id = indian_event.63
 	title = indian_event.63.t
 	desc = indian_event.63.d
+	picture = GFX_indian_economy
 	is_triggered_only = yes
 	fire_only_once = yes
-	picture = GFX_indian_economy
+
 	option = {
 		name = indian_event.63.a
 		log = "[GetDateText]: [This.GetName]: indian_event.63.a executed"
@@ -2448,6 +2610,7 @@ country_event = {
 		decrease_corruption = yes
 		ai_chance = { base = 1 }
 	}
+
 }
 
 # 2017 Doklam Standoff - June 18, 2017
@@ -2455,14 +2618,16 @@ country_event = {
 	id = RAJ_eastas.6
 	title = RAJ_eastas.6.t
 	desc = RAJ_eastas.6.d
+	picture = GFX_china_indian_border_skirmish
 	is_triggered_only = yes
 	fire_only_once = yes
-	picture = GFX_china_indian_border_skirmish
+
 	trigger = {
 		original_tag = RAJ
 		date > 2017.6.1
 		country_exists = CHI
 	}
+
 	option = {
 		name = RAJ_eastas.6.a
 		log = "[GetDateText]: [This.GetName]: RAJ_eastas.6.a executed"
@@ -2471,6 +2636,7 @@ country_event = {
 		reverse_add_opinion_modifier = { target = CHI modifier = border_tensions }
 		ai_chance = { base = 1 }
 	}
+
 }
 
 # 2019 Pulwama Attack - February 14, 2019 - 40 CRPF killed
@@ -2478,9 +2644,10 @@ country_event = {
 	id = indian_event.64
 	title = indian_event.64.t
 	desc = indian_event.64.d
+	picture = GFX_indian_soldiers2
 	is_triggered_only = yes
 	fire_only_once = yes
-	picture = GFX_indian_soldiers2
+
 	option = {
 		name = indian_event.64.a
 		log = "[GetDateText]: [This.GetName]: indian_event.64.a executed"
@@ -2495,6 +2662,7 @@ country_event = {
 		}
 		ai_chance = { base = 1 }
 	}
+
 }
 
 # 2019 Article 370 Revocation - August 5, 2019
@@ -2502,9 +2670,10 @@ country_event = {
 	id = indian_event.65
 	title = indian_event.65.t
 	desc = indian_event.65.d
+	picture = GFX_delhi_metro
 	is_triggered_only = yes
 	fire_only_once = yes
-	picture = GFX_delhi_metro
+
 	option = {
 		name = indian_event.65.a
 		log = "[GetDateText]: [This.GetName]: indian_event.65.a executed"
@@ -2515,6 +2684,7 @@ country_event = {
 		RAJ_change_muslim_opinion = yes
 		ai_chance = { base = 1 }
 	}
+
 }
 
 # 2019 Citizenship Amendment Act Protests - December 2019
@@ -2522,9 +2692,10 @@ country_event = {
 	id = indian_event.66
 	title = indian_event.66.t
 	desc = indian_event.66.d
+	picture = GFX_RAJ_generic
 	is_triggered_only = yes
 	fire_only_once = yes
-	picture = GFX_RAJ_generic
+
 	option = {
 		name = indian_event.66.a
 		log = "[GetDateText]: [This.GetName]: indian_event.66.a executed"
@@ -2535,6 +2706,7 @@ country_event = {
 		RAJ_change_muslim_opinion = yes
 		ai_chance = { base = 1 }
 	}
+
 }
 
 # 2020 Galwan Valley Clash - June 15, 2020 - 20 Indian soldiers killed
@@ -2542,9 +2714,10 @@ country_event = {
 	id = RAJ_eastas.7
 	title = RAJ_eastas.7.t
 	desc = RAJ_eastas.7.d
+	picture = GFX_RAJ_generic
 	is_triggered_only = yes
 	fire_only_once = yes
-	picture = GFX_RAJ_generic
+
 	option = {
 		name = RAJ_eastas.7.a
 		log = "[GetDateText]: [This.GetName]: RAJ_eastas.7.a executed"
@@ -2558,6 +2731,7 @@ country_event = {
 		}
 		ai_chance = { base = 1 }
 	}
+
 }
 
 # 2021 Bijapur Attack - April 3, 2021 - 22 security personnel killed
@@ -2565,9 +2739,10 @@ country_event = {
 	id = RAJ_naxal.20
 	title = RAJ_naxal.20.t
 	desc = RAJ_naxal.20.d
+	picture = GFX_RAJ_generic
 	is_triggered_only = yes
 	fire_only_once = yes
-	picture = GFX_RAJ_generic
+
 	option = {
 		name = RAJ_naxal.20.a
 		log = "[GetDateText]: [This.GetName]: RAJ_naxal.20.a executed"
@@ -2577,6 +2752,7 @@ country_event = {
 		456 = { if = { limit = { is_owned_by = RAJ } RAJ_upgrade_naxalite_level = yes } }
 		ai_chance = { base = 1 }
 	}
+
 }
 
 # 2011 Supreme Court Ruling on Salwa Judum - July 5, 2011
@@ -2609,6 +2785,7 @@ country_event = {
 		add_political_power = -50
 		ai_chance = { base = 1 }
 	}
+
 }
 
 # 2023 Manipur Ethnic Violence - May 3, 2023
@@ -2616,9 +2793,10 @@ country_event = {
 	id = indian_event.67
 	title = indian_event.67.t
 	desc = indian_event.67.d
+	picture = GFX_RAJ_generic
 	is_triggered_only = yes
 	fire_only_once = yes
-	picture = GFX_RAJ_generic
+
 	option = {
 		name = indian_event.67.a
 		log = "[GetDateText]: [This.GetName]: indian_event.67.a executed"
@@ -2629,6 +2807,7 @@ country_event = {
 		RAJ_change_christian_opinion = yes
 		ai_chance = { base = 1 }
 	}
+
 }
 
 country_event = {
@@ -2647,9 +2826,9 @@ country_event = {
 		set_temp_variable = { temp_change = 2 }
 		RAJ_change_christian_opinion = yes
 		if = { limit = { country_exists = BRM } reverse_add_opinion_modifier = { target = BRM modifier = small_decrease } }
-
 		ai_chance = { base = 1 }
 	}
+
 }
 
 country_event = {
@@ -2673,9 +2852,9 @@ country_event = {
 			set_temp_variable = { sender_nation = RAJ.id }
 			set_improved_trade_agreement = yes
 		}
-
 		ai_chance = { base = 1 }
 	}
+
 }
 
 country_event = {
@@ -2697,7 +2876,6 @@ country_event = {
 		hidden_effect = {
 			if = { limit = { country_exists = BAN } BAN = { country_event = { id = RAJ_regional.22 days = 7 } } }
 		}
-
 		ai_chance = {
 			base = 60
 			modifier = {
@@ -2722,9 +2900,9 @@ country_event = {
 		hidden_effect = {
 			if = { limit = { country_exists = BAN } BAN = { country_event = { id = RAJ_regional.23 days = 7 } } }
 		}
-
 		ai_chance = { base = 40 }
 	}
+
 }
 
 country_event = {
@@ -2751,7 +2929,6 @@ country_event = {
 		hidden_effect = {
 			BAN = { country_event = { id = RAJ_regional.26 days = 3 } }
 		}
-
 		ai_chance = { base = 30 }
 	}
 
@@ -2760,7 +2937,6 @@ country_event = {
 		log = "[GetDateText]: [This.GetName]: RAJ_regional.4.b executed"
 		reverse_add_opinion_modifier = { target = BAN modifier = small_decrease }
 		add_stability = -0.01
-
 		ai_chance = {
 			base = 70
 			modifier = {
@@ -2769,6 +2945,7 @@ country_event = {
 			}
 		}
 	}
+
 }
 
 country_event = {
@@ -2786,9 +2963,9 @@ country_event = {
 		RAJ_change_muslim_opinion = yes
 		add_stability = -0.02
 		if = { limit = { country_exists = BAN } reverse_add_opinion_modifier = { target = BAN modifier = small_decrease } }
-
 		ai_chance = { base = 1 }
 	}
+
 }
 
 country_event = {
@@ -2806,9 +2983,9 @@ country_event = {
 		RAJ_change_sikh_opinion = yes
 		add_stability = -0.01
 		add_political_power = -15
-
 		ai_chance = { base = 1 }
 	}
+
 }
 
 country_event = {
@@ -2833,7 +3010,6 @@ country_event = {
 		reverse_add_opinion_modifier = { target = BRM modifier = improve_trade }
 		set_temp_variable = { temp_change = -1 }
 		RAJ_change_christian_opinion = yes
-
 		ai_chance = {
 			base = 50
 			modifier = {
@@ -2850,9 +3026,9 @@ country_event = {
 		set_temp_variable = { temp_change = 2 }
 		RAJ_change_christian_opinion = yes
 		reverse_add_opinion_modifier = { target = BRM modifier = small_decrease }
-
 		ai_chance = { base = 50 }
 	}
+
 }
 
 country_event = {
@@ -2869,9 +3045,9 @@ country_event = {
 		add_stability = 0.02
 		set_temp_variable = { temp_change = 4 }
 		RAJ_change_christian_opinion = yes
-
 		ai_chance = { base = 1 }
 	}
+
 }
 
 country_event = {
@@ -2892,7 +3068,6 @@ country_event = {
 		log = "[GetDateText]: [This.GetName]: RAJ_regional.9.a executed"
 		add_opinion_modifier = { target = BRM modifier = small_increase }
 		add_political_power = -10
-
 		ai_chance = {
 			base = 80
 			modifier = {
@@ -2907,6 +3082,7 @@ country_event = {
 		log = "[GetDateText]: [This.GetName]: RAJ_regional.9.b executed"
 		ai_chance = { base = 20 }
 	}
+
 }
 
 country_event = {
@@ -2931,9 +3107,9 @@ country_event = {
 		hidden_effect = {
 			if = { limit = { country_exists = CAN } CAN = { country_event = { id = RAJ_regional.21 days = 3 } } }
 		}
-
 		ai_chance = { base = 1 }
 	}
+
 }
 
 country_event = {
@@ -2960,9 +3136,9 @@ country_event = {
 			set_temp_variable = { sender_nation = RAJ.id }
 			set_improved_trade_agreement = yes
 		}
-
 		ai_chance = { base = 1 }
 	}
+
 }
 
 country_event = {
@@ -2984,7 +3160,6 @@ country_event = {
 		set_temp_variable = { temp_change = 1 }
 		RAJ_change_muslim_opinion = yes
 		add_political_power = -10
-
 		ai_chance = {
 			base = 50
 			modifier = {
@@ -3000,7 +3175,6 @@ country_event = {
 		reverse_add_opinion_modifier = { target = BAN modifier = small_decrease }
 		set_temp_variable = { temp_change = -1 }
 		RAJ_change_muslim_opinion = yes
-
 		ai_chance = {
 			base = 50
 			modifier = {
@@ -3009,6 +3183,7 @@ country_event = {
 			}
 		}
 	}
+
 }
 
 country_event = {
@@ -3033,7 +3208,6 @@ country_event = {
 			country_event = { id = RAJ_regional.14 days = 120 }
 			if = { limit = { country_exists = NEP } NEP = { country_event = { id = RAJ_regional.20 days = 7 } } }
 		}
-
 		ai_chance = {
 			base = 40
 			modifier = {
@@ -3056,7 +3230,6 @@ country_event = {
 		add_stability = -0.01
 		reverse_add_opinion_modifier = { target = NEP modifier = small_decrease }
 		add_political_power = -20
-
 		ai_chance = { base = 30 }
 	}
 
@@ -3065,9 +3238,9 @@ country_event = {
 		log = "[GetDateText]: [This.GetName]: RAJ_regional.13.c executed"
 		add_political_power = -50
 		add_opinion_modifier = { target = NEP modifier = eased_border_tensions }
-
 		ai_chance = { base = 30 }
 	}
+
 }
 
 country_event = {
@@ -3092,7 +3265,6 @@ country_event = {
 		}
 		reverse_add_opinion_modifier = { target = NEP modifier = small_decrease }
 		clr_country_flag = RAJ_nepal_blockade_maintained
-
 		ai_chance = { base = 1 }
 	}
 
@@ -3103,7 +3275,6 @@ country_event = {
 		add_political_power = -30
 		add_opinion_modifier = { target = NEP modifier = eased_border_tensions }
 		clr_country_flag = RAJ_nepal_blockade_maintained
-
 		ai_chance = { base = 1 }
 	}
 
@@ -3115,9 +3286,9 @@ country_event = {
 		log = "[GetDateText]: [This.GetName]: RAJ_regional.14.c executed"
 		add_stability = 0.01
 		add_opinion_modifier = { target = NEP modifier = improve_trade }
-
 		ai_chance = { base = 1 }
 	}
+
 }
 
 country_event = {
@@ -3145,7 +3316,6 @@ country_event = {
 		hidden_effect = {
 			if = { limit = { country_exists = NEP } NEP = { country_event = { id = RAJ_regional.24 days = 5 } } }
 		}
-
 		ai_chance = {
 			base = 30
 			modifier = {
@@ -3163,7 +3333,6 @@ country_event = {
 		log = "[GetDateText]: [This.GetName]: RAJ_regional.15.b executed"
 		add_political_power = -25
 		reverse_add_opinion_modifier = { target = NEP modifier = small_decrease }
-
 		ai_chance = {
 			base = 40
 			modifier = {
@@ -3179,7 +3348,6 @@ country_event = {
 		add_political_power = -50
 		add_opinion_modifier = { target = NEP modifier = eased_border_tensions }
 		add_stability = 0.01
-
 		ai_chance = {
 			base = 30
 			modifier = {
@@ -3188,6 +3356,7 @@ country_event = {
 			}
 		}
 	}
+
 }
 
 country_event = {
@@ -3211,7 +3380,6 @@ country_event = {
 		add_political_power = -40
 		add_opinion_modifier = { target = NEP modifier = declaration_of_friendship }
 		add_stability = 0.01
-
 		ai_chance = { base = 40 }
 	}
 
@@ -3220,9 +3388,9 @@ country_event = {
 		log = "[GetDateText]: [This.GetName]: RAJ_regional.16.b executed"
 		reverse_add_opinion_modifier = { target = NEP modifier = small_decrease }
 		add_stability = -0.01
-
 		ai_chance = { base = 60 }
 	}
+
 }
 
 country_event = {
@@ -3251,7 +3419,6 @@ country_event = {
 		hidden_effect = {
 			if = { limit = { country_exists = BHU } BHU = { country_event = { id = RAJ_regional.25 days = 5 } } }
 		}
-
 		ai_chance = {
 			base = 70
 			modifier = {
@@ -3265,9 +3432,9 @@ country_event = {
 		name = RAJ_regional.17.b
 		log = "[GetDateText]: [This.GetName]: RAJ_regional.17.b executed"
 		add_opinion_modifier = { target = BHU modifier = improve_trade }
-
 		ai_chance = { base = 30 }
 	}
+
 }
 
 country_event = {
@@ -3299,7 +3466,6 @@ country_event = {
 			set_temp_variable = { int_investment_change = 15 }
 			modify_international_investment_effect = yes
 		}
-
 		ai_chance = {
 			base = 80
 			modifier = {
@@ -3313,9 +3479,9 @@ country_event = {
 		name = RAJ_regional.18.b
 		log = "[GetDateText]: [This.GetName]: RAJ_regional.18.b executed"
 		add_political_power = 15
-
 		ai_chance = { base = 20 }
 	}
+
 }
 
 country_event = {
@@ -3341,7 +3507,6 @@ country_event = {
 			set_temp_variable = { sender_nation = RAJ.id }
 			set_improved_trade_agreement = yes
 		}
-
 		ai_chance = {
 			base = 70
 			modifier = {
@@ -3356,9 +3521,9 @@ country_event = {
 		log = "[GetDateText]: [This.GetName]: RAJ_regional.19.b executed"
 		add_stability = -0.01
 		reverse_add_opinion_modifier = { target = BHU modifier = small_decrease }
-
 		ai_chance = { base = 30 }
 	}
+
 }
 
 country_event = {
@@ -3368,9 +3533,7 @@ country_event = {
 	picture = GFX_nepal_Narayanhiti_Palace
 	is_triggered_only = yes
 
-	trigger = {
-		original_tag = NEP
-	}
+	trigger = { original_tag = NEP }
 
 	option = {
 		name = RAJ_regional.20.a
@@ -3378,7 +3541,6 @@ country_event = {
 		FROM = { add_stability = -0.01 }
 		add_opinion_modifier = { target = CHI modifier = declaration_of_friendship }
 		reverse_add_opinion_modifier = { target = FROM modifier = border_tensions }
-
 		ai_chance = {
 			base = 60
 			modifier = {
@@ -3393,9 +3555,9 @@ country_event = {
 		log = "[GetDateText]: [This.GetName]: RAJ_regional.20.b executed"
 		add_stability = -0.03
 		add_opinion_modifier = { target = FROM modifier = small_decrease }
-
 		ai_chance = { base = 40 }
 	}
+
 }
 
 country_event = {
@@ -3405,16 +3567,13 @@ country_event = {
 	picture = GFX_india_flag
 	is_triggered_only = yes
 
-	trigger = {
-		original_tag = CAN
-	}
+	trigger = { original_tag = CAN }
 
 	option = {
 		name = RAJ_regional.21.a
 		log = "[GetDateText]: [This.GetName]: RAJ_regional.21.a executed"
 		reverse_add_opinion_modifier = { target = FROM modifier = embargo }
 		add_stability = -0.01
-
 		ai_chance = {
 			base = 80
 			modifier = {
@@ -3429,9 +3588,9 @@ country_event = {
 		log = "[GetDateText]: [This.GetName]: RAJ_regional.21.b executed"
 		add_opinion_modifier = { target = FROM modifier = small_decrease }
 		add_political_power = -20
-
 		ai_chance = { base = 20 }
 	}
+
 }
 
 country_event = {
@@ -3441,18 +3600,16 @@ country_event = {
 	picture = GFX_bangladeshi_genlemen
 	is_triggered_only = yes
 
-	trigger = {
-		original_tag = BAN
-	}
+	trigger = { original_tag = BAN }
 
 	option = {
 		name = RAJ_regional.22.a
 		log = "[GetDateText]: [This.GetName]: RAJ_regional.22.a executed"
 		reverse_add_opinion_modifier = { target = FROM modifier = small_decrease }
 		add_stability = -0.02
-
 		ai_chance = { base = 1 }
 	}
+
 }
 
 country_event = {
@@ -3462,18 +3619,16 @@ country_event = {
 	picture = GFX_bangladeshi_genlemen
 	is_triggered_only = yes
 
-	trigger = {
-		original_tag = BAN
-	}
+	trigger = { original_tag = BAN }
 
 	option = {
 		name = RAJ_regional.23.a
 		log = "[GetDateText]: [This.GetName]: RAJ_regional.23.a executed"
 		add_opinion_modifier = { target = FROM modifier = declaration_of_friendship }
 		add_stability = 0.01
-
 		ai_chance = { base = 1 }
 	}
+
 }
 
 country_event = {
@@ -3483,16 +3638,13 @@ country_event = {
 	picture = GFX_nepal_Narayanhiti_Palace
 	is_triggered_only = yes
 
-	trigger = {
-		original_tag = NEP
-	}
+	trigger = { original_tag = NEP }
 
 	option = {
 		name = RAJ_regional.24.a
 		log = "[GetDateText]: [This.GetName]: RAJ_regional.24.a executed"
 		reverse_add_opinion_modifier = { target = FROM modifier = border_tensions }
 		add_war_support = 0.03
-
 		ai_chance = { base = 60 }
 	}
 
@@ -3501,9 +3653,9 @@ country_event = {
 		log = "[GetDateText]: [This.GetName]: RAJ_regional.24.b executed"
 		add_opinion_modifier = { target = FROM modifier = small_decrease }
 		add_political_power = -10
-
 		ai_chance = { base = 40 }
 	}
+
 }
 
 country_event = {
@@ -3513,16 +3665,13 @@ country_event = {
 	picture = GFX_RAJ_generic # TODO: replace with Bhutan-specific image
 	is_triggered_only = yes
 
-	trigger = {
-		original_tag = BHU
-	}
+	trigger = { original_tag = BHU }
 
 	option = {
 		name = RAJ_regional.25.a
 		log = "[GetDateText]: [This.GetName]: RAJ_regional.25.a executed"
 		add_opinion_modifier = { target = FROM modifier = declaration_of_friendship }
 		give_military_access = FROM
-
 		ai_chance = { base = 80 }
 	}
 
@@ -3530,7 +3679,6 @@ country_event = {
 		name = RAJ_regional.25.b
 		log = "[GetDateText]: [This.GetName]: RAJ_regional.25.b executed"
 		add_opinion_modifier = { target = FROM modifier = small_increase }
-
 		ai_chance = {
 			base = 20
 			modifier = {
@@ -3539,6 +3687,7 @@ country_event = {
 			}
 		}
 	}
+
 }
 
 country_event = {
@@ -3548,18 +3697,16 @@ country_event = {
 	picture = GFX_bangladeshi_genlemen
 	is_triggered_only = yes
 
-	trigger = {
-		original_tag = BAN
-	}
+	trigger = { original_tag = BAN }
 
 	option = {
 		name = RAJ_regional.26.a
 		log = "[GetDateText]: [This.GetName]: RAJ_regional.26.a executed"
 		add_opinion_modifier = { target = FROM modifier = declaration_of_friendship }
 		add_stability = 0.02
-
 		ai_chance = { base = 1 }
 	}
+
 }
 
 # Religious Rebellion (state-parameterized via RAJ_rebel_target_state)
@@ -3600,6 +3747,7 @@ country_event = {
 		}
 		add_stability = 0.02
 	}
+
 }
 
 #############################################
@@ -3660,6 +3808,7 @@ country_event = {
 			}
 		}
 	}
+
 }
 
 # Full Member Acceptance
@@ -3675,6 +3824,7 @@ country_event = {
 		log = "[GetDateText]: [This.GetName]: indian_event.71.a executed"
 		FROM = { BRICS_join = yes }
 	}
+
 }
 
 # Full Member Rejection
@@ -3691,6 +3841,7 @@ country_event = {
 		add_political_power = -25
 		custom_effect_tooltip = RAJ_brics_rejected_tt
 	}
+
 }
 
 # Associate Member Invitation
@@ -3750,6 +3901,7 @@ country_event = {
 			}
 		}
 	}
+
 }
 
 # Associate Member Acceptance
@@ -3765,6 +3917,7 @@ country_event = {
 		log = "[GetDateText]: [This.GetName]: indian_event.74.a executed"
 		FROM = { BRICS_join_associate = yes }
 	}
+
 }
 
 # Associate Member Rejection
@@ -3781,6 +3934,7 @@ country_event = {
 		add_political_power = -15
 		custom_effect_tooltip = RAJ_brics_rejected_tt
 	}
+
 }
 
 # Observer Invitation
@@ -3833,6 +3987,7 @@ country_event = {
 			}
 		}
 	}
+
 }
 
 # Observer Acceptance
@@ -3848,6 +4003,7 @@ country_event = {
 		log = "[GetDateText]: [This.GetName]: indian_event.77.a executed"
 		FROM = { BRICS_join_observer = yes }
 	}
+
 }
 
 # Observer Rejection
@@ -3864,6 +4020,7 @@ country_event = {
 		add_political_power = -10
 		custom_effect_tooltip = RAJ_brics_rejected_tt
 	}
+
 }
 
 # Promotion Offer: Observer -> Associate (fires to the target)
@@ -3923,6 +4080,7 @@ country_event = {
 			}
 		}
 	}
+
 }
 
 # Promotion Offer: Associate -> Full Member (fires to the target)
@@ -3979,6 +4137,7 @@ country_event = {
 			}
 		}
 	}
+
 }
 
 # Central Asian Loyalty Ultimatum (fires to KYR/KAZ/UZB/TAJ - RAJ_true_indian_territories_in_cenasia)
@@ -3986,8 +4145,9 @@ country_event = {
 	id = indian_event.83
 	title = indian_event.83.t
 	desc = indian_event.83.d
-	is_triggered_only = yes
 	picture = GFX_fracking
+	is_triggered_only = yes
+
 	trigger = {
 		FROM = { exists = yes }
 		NOT = { has_war_with = FROM }
@@ -4020,6 +4180,7 @@ country_event = {
 			}
 		}
 	}
+
 	option = {
 		name = indian_event.83.b
 		log = "[GetDateText]: [This.GetName]: indian_event.83.b executed"
@@ -4052,4 +4213,5 @@ country_event = {
 			}
 		}
 	}
+
 }
