@@ -366,10 +366,6 @@ country_event = {
 	option = { # Accepts
 		name = AFG_contact_iran.3.a
 		log = "[GetDateText]: [This.GetName]: AFG_contact_iran.3.a executed"
-		if = {
-			limit = { is_faction_leader = yes }
-			add_to_faction = AFG
-		}
 		AFG = {
 			if = {
 				limit = { has_idea = the_ulema }
@@ -417,6 +413,24 @@ country_event = {
 	option = {
 		name = AFG_contact_iran.4.a
 		log = "[GetDateText]: [This.GetName]: AFG_contact_iran.4.a"
+		if = {
+			limit = {
+				FROM = {
+					is_in_faction = yes
+					is_faction_leader = yes
+				}
+			}
+			if = {
+				limit = { is_faction_leader = yes }
+				dismantle_faction = yes
+			}
+			else_if = {
+				limit = { is_in_faction = yes }
+				leave_faction = yes
+			}
+			FROM = { add_to_faction = ROOT }
+			add_ideas = faction_resistance_axis_member
+		}
 		ai_chance = {
 			base = 1
 		}
