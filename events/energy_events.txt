@@ -215,7 +215,7 @@ country_event = {
 	}
 }
 
-# IIgnored the Request
+# Ignored the Request
 country_event = {
 	id = energy.8
 	title = energy.8.t
